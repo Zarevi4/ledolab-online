@@ -48,7 +48,8 @@ export default function AboutOwner() {
           <div className="flex flex-col justify-center">
             <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.about.tag}</span>
             <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
-              {t.about.title} <span className="gradient-text">{t.about.titleAccent}</span> LedoLab Digital
+              {t.about.title} <span className="gradient-text">{t.about.titleAccent}</span>
+              <br />LedoLab Digital
             </h2>
             <div className="mt-4 w-12 h-[3px] bg-ink/20 rounded-full" />
             <p className="mt-4 text-[16px] text-ink-light leading-relaxed">{t.about.bio}</p>

@@ -58,10 +58,6 @@ export default function FactPageClient({ fact }: { fact: Fact }) {
           className="group relative rounded-[16px] border border-border overflow-hidden bg-surface cursor-pointer mb-8"
           onClick={() => setLightbox(true)}
         >
-          {/* Watermark */}
-          <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-            <span className="font-heading text-[32px] font-bold select-none tracking-wide rotate-[-15deg] text-black/15 dark:text-white/15">LedoLab</span>
-          </div>
           {/* Zoom hint */}
           <div className="absolute inset-0 z-10 flex items-center justify-center bg-ink/0 group-hover:bg-ink/10 transition-colors duration-300">
             <div className="w-10 h-10 rounded-full bg-surface/80 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
@@ -132,12 +128,6 @@ export default function FactPageClient({ fact }: { fact: Fact }) {
               }`}
               onClick={(e) => { e.stopPropagation(); setZoomed(!zoomed); }}
             >
-              <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-                <span className="font-heading text-[48px] sm:text-[64px] font-bold select-none tracking-wide rotate-[-15deg]" style={{ WebkitTextStroke: "1.5px rgba(255,255,255,0.25)" }}>
-                  <span className="text-black/20">LedoLab</span>
-                  <span className="absolute inset-0 text-white/20">LedoLab</span>
-                </span>
-              </div>
               <Image
                 src={fact.image}
                 alt={title}

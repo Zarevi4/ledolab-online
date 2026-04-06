@@ -59,7 +59,7 @@ export default function Header() {
     >
       <nav className="max-w-[1200px] mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         <a
-          href="#"
+          href="/"
           className="font-heading text-[18px] font-bold tracking-tight text-ink"
         >
           <span className="gradient-text">LedoLab</span><span className="text-accent">.</span>

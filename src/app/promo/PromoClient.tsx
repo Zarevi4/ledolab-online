@@ -220,7 +220,7 @@ export default function PromoPage() {
               type="submit"
               className="w-full gradient-bg text-white text-[15px] font-bold py-4 rounded-2xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
             >
-              Получить аудит за 19.99€
+              Оставить заявку
               <ArrowRight size={18} />
             </button>
             <p className="text-center text-[10px] text-ink-faint">
@@ -237,7 +237,7 @@ export default function PromoPage() {
           className="w-full gradient-bg text-white text-[14px] font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2"
         >
           <MessageCircle size={16} />
-          Оставить заявку – 19.99€
+          Оставить заявку
         </a>
       </div>
 
