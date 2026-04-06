@@ -25,22 +25,39 @@ export default function AboutOwner() {
   return (
     <section id="about" className="py-28 sm:py-36 px-6 lg:px-8 bg-bg-alt">
       <div className="max-w-[1200px] mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex flex-col md:flex-row gap-8 items-start mb-14">
-          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border border-border bg-surface shrink-0">
-            <Image src="/images/homepage/about.jpg" alt="Денис Ледовской" width={128} height={128} className="w-full h-full object-cover" />
+        {/* Owner card: photo left + text right */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-[380px_1fr] gap-8 mb-14"
+        >
+          {/* Photo */}
+          <div className="relative rounded-2xl overflow-hidden border border-border bg-surface aspect-[3/4] md:aspect-auto">
+            <Image
+              src="/images/homepage/about.jpg"
+              alt="Денис Ледовской"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 380px"
+            />
           </div>
-          <div className="max-w-[560px]">
+
+          {/* Text */}
+          <div className="flex flex-col justify-center">
             <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.about.tag}</span>
             <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
               {t.about.title} <span className="gradient-text">{t.about.titleAccent}</span> LedoLab Digital
             </h2>
+            <div className="mt-4 w-12 h-[3px] bg-ink/20 rounded-full" />
             <p className="mt-4 text-[16px] text-ink-light leading-relaxed">{t.about.bio}</p>
 
             {/* Google Reviews badge */}
-            <div className="mt-4 inline-flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-2.5">
+            <div className="mt-5 inline-flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-2.5 self-start">
               <div className="flex items-center gap-0.5">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <svg key={i} className="w-4 h-4 text-accent-warm fill-accent-warm" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                  <svg key={i} className="w-4 h-4 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
                 ))}
               </div>
               <div className="text-[12px]">
@@ -51,6 +68,8 @@ export default function AboutOwner() {
             </div>
           </div>
         </motion.div>
+
+        {/* Highlights grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {t.about.highlights.map((h, i) => (
             <motion.div key={h.title} {...fade(i)} className="group p-6 rounded-[20px] border border-border bg-surface hover:shadow-[0_12px_40px_rgba(0,0,0,0.05)] hover:border-accent/20 transition-all duration-500">

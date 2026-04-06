@@ -21,15 +21,16 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
   const related = caseStudies.filter((c) => c.id !== cs.id && c.category === cs.category).slice(0, 3);
   const [modalOpen, setModalOpen] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [zoomed, setZoomed] = useState(false);
 
-  const closeLightbox = useCallback(() => setLightbox(null), []);
+  const closeLightbox = useCallback(() => { setLightbox(null); setZoomed(false); }, []);
 
   useEffect(() => {
     if (lightbox === null || !cs.images) return;
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeLightbox();
-      if (e.key === "ArrowRight") setLightbox((p) => (p !== null && p < cs.images!.length - 1 ? p + 1 : p));
-      if (e.key === "ArrowLeft") setLightbox((p) => (p !== null && p > 0 ? p - 1 : p));
+      if (e.key === "ArrowRight") { setLightbox((p) => (p !== null && p < cs.images!.length - 1 ? p + 1 : p)); setZoomed(false); }
+      if (e.key === "ArrowLeft") { setLightbox((p) => (p !== null && p > 0 ? p - 1 : p)); setZoomed(false); }
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
@@ -235,7 +236,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
 
               {lightbox > 0 && (
                 <button
-                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox - 1); }}
+                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox - 1); setZoomed(false); }}
                   className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface/20 backdrop-blur flex items-center justify-center text-white hover:bg-surface/30 transition-colors z-10"
                   aria-label="Previous"
                 >
@@ -245,7 +246,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
 
               {lightbox < cs.images.length - 1 && (
                 <button
-                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox + 1); }}
+                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox + 1); setZoomed(false); }}
                   className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface/20 backdrop-blur flex items-center justify-center text-white hover:bg-surface/30 transition-colors z-10"
                   aria-label="Next"
                 >
@@ -259,8 +260,13 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.2 }}
-                className="relative w-full max-w-[1000px] max-h-[85vh] rounded-2xl overflow-hidden"
-                onClick={(e) => e.stopPropagation()}
+                className={`relative rounded-2xl overflow-auto ${
+                  zoomed ? "w-full max-w-[95vw] max-h-[95vh] cursor-zoom-out" : "w-full max-w-[1000px] max-h-[85vh] cursor-zoom-in"
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setZoomed(!zoomed);
+                }}
               >
                 {/* Watermark in lightbox */}
                 <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
@@ -272,9 +278,11 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
                 <Image
                   src={cs.images[lightbox]}
                   alt={`${cs.title} – скриншот ${lightbox + 1}`}
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto max-h-[85vh] object-contain bg-[#0d0d12] rounded-2xl"
+                  width={1800}
+                  height={1200}
+                  className={`bg-[#0d0d12] rounded-2xl transition-all duration-300 ${
+                    zoomed ? "w-[1800px] max-w-none" : "w-full h-auto max-h-[85vh] object-contain"
+                  }`}
                   priority
                 />
               </motion.div>
