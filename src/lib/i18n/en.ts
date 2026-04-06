@@ -121,6 +121,13 @@ export const en: Translations = {
     cta: "Get Started",
     related: "Related Cases",
     go: "View",
+    goals: "Project Goals",
+    situation: "Starting Situation",
+    strategyFull: "Strategy & Execution",
+    conclusion: "Summary",
+  },
+  factPage: {
+    back: "Back",
   },
   modal: {
     title: "Get",

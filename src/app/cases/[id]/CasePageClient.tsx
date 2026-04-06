@@ -9,6 +9,7 @@ import type { CaseStudy } from "@/lib/data";
 import { caseStudies } from "@/lib/data";
 import { caseFullContent } from "@/lib/case-content";
 import ContactModal from "@/components/ContactModal";
+import { useI18n } from "@/lib/i18n/context";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -19,6 +20,7 @@ const fade = (delay: number) => ({
 });
 
 export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy }) {
+  const { t } = useI18n();
   const related = caseStudies.filter((c) => c.id !== cs.id && c.category === cs.category).slice(0, 3);
   const full = caseFullContent[cs.id];
   const [modalOpen, setModalOpen] = useState(false);
@@ -146,7 +148,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
               <div className="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center">
                 <Target size={20} strokeWidth={1.8} />
               </div>
-              <h2 className="font-heading text-[22px] font-bold text-ink">Цели проекта</h2>
+              <h2 className="font-heading text-[22px] font-bold text-ink">{ t.casePage.goals }</h2>
             </div>
             <ul className="space-y-2.5 pl-[52px]">
               {full.goals.map((g, i) => (
@@ -172,7 +174,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
               <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
                 <Lightbulb size={20} strokeWidth={1.8} />
               </div>
-              <h2 className="font-heading text-[22px] font-bold text-ink">Стратегия и реализация</h2>
+              <h2 className="font-heading text-[22px] font-bold text-ink">{ t.casePage.strategyFull }</h2>
             </div>
             <div className="space-y-5 pl-[52px]">
               {full.phases.map((phase, i) => (
@@ -191,14 +193,14 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Target size={20} strokeWidth={1.8} /></div>
-                <h2 className="font-heading text-[22px] font-bold text-ink">Задача</h2>
+                <h2 className="font-heading text-[22px] font-bold text-ink">{ t.casePage.challenge }</h2>
               </div>
               <p className="text-[16px] text-ink-light leading-relaxed pl-[52px]">{cs.challenge}</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-12">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center"><Lightbulb size={20} strokeWidth={1.8} /></div>
-                <h2 className="font-heading text-[22px] font-bold text-ink">Стратегия</h2>
+                <h2 className="font-heading text-[22px] font-bold text-ink">{ t.casePage.strategy }</h2>
               </div>
               <ul className="space-y-3 pl-[52px]">
                 {cs.strategy.map((s, i) => (
@@ -218,7 +220,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="font-heading text-[22px] font-bold text-ink mb-6">Скриншоты</h2>
+            <h2 className="font-heading text-[22px] font-bold text-ink mb-6">{ t.casePage.screenshots }</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {cs.images.map((img, i) => (
                 <div
@@ -342,7 +344,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
               <Trophy size={20} strokeWidth={1.8} />
             </div>
-            <h2 className="font-heading text-[22px] font-bold text-ink">Результаты</h2>
+            <h2 className="font-heading text-[22px] font-bold text-ink">{ t.casePage.results }</h2>
           </div>
           <ul className="space-y-3 pl-[52px]">
             {cs.results.map((r, i) => (
@@ -368,16 +370,16 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
           className="rounded-[20px] border border-border bg-surface p-8 sm:p-10 text-center"
         >
           <h3 className="font-heading text-[22px] font-bold text-ink mb-3">
-            Хотите такие же <span className="gradient-text">результаты</span>?
+            {t.casePage.ctaTitle} <span className="gradient-text">{t.casePage.results}</span>?
           </h3>
           <p className="text-[15px] text-ink-light mb-6 max-w-[420px] mx-auto">
-            Оставьте заявку – мы проведём бесплатную консультацию и составим план роста для вашего бизнеса.
+            {t.casePage.ctaSubtitle}
           </p>
           <button
             onClick={() => setModalOpen(true)}
             className="gradient-bg text-white font-semibold text-[14px] px-7 py-[13px] rounded-full hover:opacity-90 transition-opacity inline-block"
           >
-            Оставить заявку
+            {t.casePage.cta}
           </button>
         </motion.div>
 

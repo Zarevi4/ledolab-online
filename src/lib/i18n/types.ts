@@ -100,6 +100,13 @@ export interface Translations {
     cta: string;
     related: string;
     go: string;
+    goals: string;
+    situation: string;
+    strategyFull: string;
+    conclusion: string;
+  };
+  factPage: {
+    back: string;
   };
   modal: {
     title: string;

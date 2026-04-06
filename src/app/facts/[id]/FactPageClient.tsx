@@ -12,7 +12,7 @@ import { useI18n } from "@/lib/i18n/context";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 export default function FactPageClient({ fact }: { fact: Fact }) {
-  const { locale } = useI18n();
+  const { locale, t } = useI18n();
   const title = fact.titles[locale] || fact.titles.ru;
   const text = fact.texts[locale] || fact.texts.ru;
   const idx = facts.findIndex((f) => f.id === fact.id);
@@ -31,7 +31,7 @@ export default function FactPageClient({ fact }: { fact: Fact }) {
           transition={{ duration: 0.5, ease }}
         >
           <Link href="/#stats" className="inline-flex items-center gap-2 text-[13px] font-medium text-ink-light hover:text-ink transition-colors mb-8">
-            <ArrowLeft size={14} /> Назад
+            <ArrowLeft size={14} /> {t.factPage.back}
           </Link>
         </motion.div>
 

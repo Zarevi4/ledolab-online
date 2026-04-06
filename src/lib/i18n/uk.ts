@@ -121,6 +121,13 @@ export const uk: Translations = {
     cta: "Залишити заявку",
     related: "Схожі кейси",
     go: "Перейти",
+    goals: "Цілі проєкту",
+    situation: "Вихідна ситуація",
+    strategyFull: "Стратегія та реалізація",
+    conclusion: "Підсумок",
+  },
+  factPage: {
+    back: "Назад",
   },
   modal: {
     title: "Залишити",

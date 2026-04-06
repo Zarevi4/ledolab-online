@@ -121,6 +121,13 @@ export const bg: Translations = {
     cta: "Изпратете заявка",
     related: "Подобни кейсове",
     go: "Виж",
+    goals: "Цели на проекта",
+    situation: "Начална ситуация",
+    strategyFull: "Стратегия и изпълнение",
+    conclusion: "Обобщение",
+  },
+  factPage: {
+    back: "Назад",
   },
   modal: {
     title: "Изпратете",

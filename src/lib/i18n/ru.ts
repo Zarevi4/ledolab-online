@@ -121,6 +121,13 @@ export const ru: Translations = {
     cta: "Оставить заявку",
     related: "Похожие кейсы",
     go: "Перейти",
+    goals: "Цели проекта",
+    situation: "Исходная ситуация",
+    strategyFull: "Стратегия и реализация",
+    conclusion: "Итог",
+  },
+  factPage: {
+    back: "Назад",
   },
   modal: {
     title: "Оставить",
