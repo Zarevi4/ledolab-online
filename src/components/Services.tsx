@@ -173,9 +173,14 @@ export default function Services() {
 
               {/* CTA button at very bottom */}
               <div className="px-6 pb-6">
-                <a href="#contact" className={`block text-center text-[14px] font-semibold py-[11px] rounded-xl transition-all ${plan.highlighted ? "gradient-bg text-white hover:opacity-90" : "border border-border text-ink hover:border-accent/40 hover:text-accent"}`}>
+                <button
+                  onClick={() => {
+                    window.dispatchEvent(new CustomEvent("select-service", { detail: plan.name }));
+                  }}
+                  className={`block w-full text-center text-[14px] font-semibold py-[11px] rounded-xl transition-all ${plan.highlighted ? "gradient-bg text-white hover:opacity-90" : "border border-border text-ink hover:border-accent/40 hover:text-accent"}`}
+                >
                   {t.services.cta}
-                </a>
+                </button>
               </div>
             </motion.div>
           ))}

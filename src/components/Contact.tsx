@@ -2,10 +2,22 @@
 
 import { motion } from "framer-motion";
 import { Mail, MessageCircle, Phone, Send, MapPin, Building2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n/context";
 
 export default function Contact() {
   const { t } = useI18n();
+  const [selectedService, setSelectedService] = useState("");
+
+  useEffect(() => {
+    const handler = (e: CustomEvent<string>) => {
+      setSelectedService(e.detail);
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    };
+    window.addEventListener("select-service", handler as EventListener);
+    return () => window.removeEventListener("select-service", handler as EventListener);
+  }, []);
+
   return (
     <section id="contact" className="py-28 sm:py-36 px-6 lg:px-8">
       <div className="max-w-[580px] mx-auto">
@@ -30,9 +42,16 @@ export default function Contact() {
             </div>
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.15em] uppercase text-ink-faint mb-1.5">{t.contact.service}</label>
-              <select defaultValue="" className="w-full px-4 py-[11px] rounded-xl bg-bg border border-border text-ink text-[14px] focus:outline-none focus:border-accent/40 focus:ring-2 focus:ring-accent/10 transition-all appearance-none">
+              <select
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
+                className="w-full px-4 py-[11px] rounded-xl bg-bg border border-border text-ink text-[14px] focus:outline-none focus:border-accent/40 focus:ring-2 focus:ring-accent/10 transition-all appearance-none"
+              >
                 <option value="" disabled>{t.contact.servicePlaceholder}</option>
-                {t.contact.serviceOptions.map((opt) => <option key={opt}>{opt}</option>)}
+                {t.contact.serviceOptions.map((opt) => <option key={opt} value={opt}>{opt}</option>)}
+                {selectedService && !t.contact.serviceOptions.includes(selectedService) && (
+                  <option value={selectedService}>{selectedService}</option>
+                )}
               </select>
             </div>
             <div>
