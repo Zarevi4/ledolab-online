@@ -55,12 +55,12 @@ export default function Hero() {
           className="rounded-[20px] border border-border bg-surface p-6 shadow-[0_8px_40px_rgba(0,0,0,0.06)]"
         >
           {/* Promo badge */}
-          <div className="mb-5 p-3 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200/50 dark:border-red-800/30">
-            <p className="text-[14px] font-bold text-red-600">
+          <div className="mb-5 p-4 rounded-xl gradient-bg">
+            <p className="text-[15px] font-bold text-white">
               {t.hero.promoPrice}{" "}
-              <span className="text-ink-faint line-through text-[13px] font-normal">{t.hero.promoOld}</span>
+              <span className="text-white/60 line-through text-[13px] font-normal">{t.hero.promoOld}</span>
             </p>
-            <p className="text-[13px] text-ink-light mt-0.5">{t.hero.promoDesc}</p>
+            <p className="text-[13px] text-white/80 mt-0.5">{t.hero.promoDesc}</p>
           </div>
 
           <form onSubmit={(e) => e.preventDefault()} className="space-y-3">

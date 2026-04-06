@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SevenFacts from "@/components/SevenFacts";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import Certificates from "@/components/Certificates";
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <SevenFacts />
         <Services />
         <Stats />
         <Certificates />

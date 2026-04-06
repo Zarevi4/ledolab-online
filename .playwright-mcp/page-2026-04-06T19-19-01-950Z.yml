@@ -1,0 +1,123 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [expanded] [active] [ref=e17]
+        - button "Search" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+        - button "Directions" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: 
+      - grid "Suggestions" [ref=e115]:
+        - row "More from recent history" [ref=e118] [cursor=pointer]:
+          - gridcell "More from recent history" [ref=e119]:
+            - generic [ref=e120]: More from recent history
+    - region "Available search options for this area" [ref=e127]:
+      - generic [ref=e130]:
+        - button "Restaurants" [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]:
+            - generic [ref=e135]: 
+            - generic [ref=e136]: Restaurants
+        - button "Hotels" [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]:
+            - generic [ref=e141]: 
+            - generic [ref=e142]: Hotels
+        - button "Things to do" [ref=e144] [cursor=pointer]:
+          - generic [ref=e145]:
+            - generic [ref=e147]: 
+            - generic [ref=e148]: Things to do
+        - button "Transit" [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic [ref=e153]: 
+            - generic [ref=e154]: Transit
+        - button "Parking" [ref=e156] [cursor=pointer]:
+          - generic [ref=e157]:
+            - generic [ref=e159]: 
+            - generic [ref=e160]: Parking
+        - button "Pharmacies" [ref=e162] [cursor=pointer]:
+          - generic [ref=e163]:
+            - generic [ref=e165]: 
+            - generic [ref=e166]: Pharmacies
+        - button "ATMs" [ref=e168] [cursor=pointer]:
+          - generic [ref=e169]:
+            - generic [ref=e171]: 
+            - generic [ref=e172]: ATMs
+      - button "Next page" [ref=e173] [cursor=pointer]:
+        - generic [ref=e174]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menu" [ref=e29] [cursor=pointer]:
+              - generic [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Saved" [ref=e33] [cursor=pointer]:
+              - generic [ref=e35]: 
+              - generic [ref=e37]: Saved
+          - listitem [ref=e38]:
+            - button "Recents" [ref=e39] [cursor=pointer]:
+              - generic [ref=e41]: 
+              - generic [ref=e43]: Recents
+          - listitem [ref=e176]:
+            - button [ref=e177] [cursor=pointer]
+          - listitem [ref=e45]:
+            - button "Get app" [ref=e46] [cursor=pointer]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: Get app
+        - main [ref=e55]:
+          - img [ref=e59]
+          - generic [ref=e62]:
+            - generic:
+              - heading [level=1]
+          - region "Actions for" [ref=e65]:
+            - button "Directions" [ref=e67] [cursor=pointer]:
+              - generic [ref=e69]: 
+              - generic [ref=e70]: Directions
+            - button "Save" [ref=e72] [cursor=pointer]:
+              - generic [ref=e74]: 
+              - generic [ref=e75]: Save
+            - button "Nearby" [ref=e77] [cursor=pointer]:
+              - generic [ref=e79]: 
+              - generic [ref=e80]: Nearby
+            - button "Send to phone" [ref=e82] [cursor=pointer]:
+              - generic [ref=e84]: 
+              - generic [ref=e85]: Send to phone
+            - button "Share" [ref=e87] [cursor=pointer]:
+              - generic [ref=e89]: 
+              - generic [ref=e90]: Share
+          - link "About this data" [ref=e97] [cursor=pointer]:
+            - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=en
+            - generic [ref=e99]: About this data
+          - heading "Get the most out of Google Maps Sign in" [level=2] [ref=e103]:
+            - generic [ref=e104]: Get the most out of Google Maps
+            - button "Sign in" [ref=e107] [cursor=pointer]:
+              - generic [ref=e109]: Sign in
+      - button "Collapse side panel" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: 
+    - generic [ref=e186]:
+      - button "Google apps" [ref=e190] [cursor=pointer]:
+        - img [ref=e191]
+      - link "Sign in" [ref=e194] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F%2F%4042.5525248%2C27.5178684%2C14z%2Fdata%3D!3m1!4b1%3Fg_ep%3DEgoyMDI2MDQwMS4wIMCaEyoASAFQAw%253D%253D&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Show Your Location" [ref=e197] [cursor=pointer]:
+          - generic [ref=e199]: 
+        - generic [ref=e201] [cursor=pointer]:
+          - button "Zoom in" [ref=e202]
+          - button "Zoom out" [ref=e205]
+      - button "Browse Street View images" [ref=e213]
+      - generic [ref=e215]:
+        - generic "Interactive map" [ref=e216]
+        - generic [ref=e220] [cursor=pointer]:
+          - generic [ref=e221]: 
+          - generic [ref=e222]: Layers
+        - button "Layers" [ref=e223] [cursor=pointer]
+    - generic [ref=e225]:
+      - contentinfo [ref=e228]:
+        - text: Imagery ©2026 , Map data ©2026
+        - button "Bulgaria" [ref=e229] [cursor=pointer]
+        - button "Terms" [ref=e230] [cursor=pointer]
+        - button "Privacy" [ref=e231] [cursor=pointer]
+        - button "Send Product Feedback" [ref=e232] [cursor=pointer]
+      - button "500 m" [ref=e234] [cursor=pointer]: 500 m

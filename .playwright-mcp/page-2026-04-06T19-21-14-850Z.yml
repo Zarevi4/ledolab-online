@@ -1,0 +1,220 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-BG
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - link:
+            - /url: https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=0ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQpYkNCAs
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: LedoLab — Marketing & Digital Agency, Sarafovo, ul. "Angel Dimitrov" 58, 8016 Burgas LedoLab — Marketing & Digital Agency, Sarafovo, ul. "Angel Dimitrov" 58, 8016 Burgas
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]
+      - generic [ref=e49]:
+        - button "Google apps" [ref=e51] [cursor=pointer]:
+          - img [ref=e52]
+        - link "Sign in" [ref=e56] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fhl%3Den-BG%26gl%3Dbg%26q%3DLedoLab%2B%25E2%2580%2594%2BMarketing%2B%2526%2BDigital%2BAgency,%2BSarafovo,%2Bul.%2B%2522Angel%2BDimitrov%2522%2B58,%2B8016%2BBurgas%26ludocid%3D18094225541851922054%26lsig%3DAB86z5UK71hS0OEHfRvs4AwANgXR%26sei%3DqQfUaaysDouH4-EPyaHOwAc&ec=futura_srp_og_si_72236_p
+  - generic [ref=e58]:
+    - navigation [ref=e64]:
+      - list [ref=e69]:
+        - listitem [ref=e70]:
+          - link "AI Mode" [ref=e73] [cursor=pointer]:
+            - /url: /search?q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&aep=1&ntc=1&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ2J8OegQICBAE
+            - generic [ref=e76]: AI Mode
+        - listitem [ref=e77]:
+          - link "All" [disabled] [ref=e78]:
+            - generic [ref=e80]: All
+        - listitem [ref=e81]:
+          - link "Images" [ref=e82] [cursor=pointer]:
+            - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQtKgLegQIDBAB
+            - generic [ref=e84]: Images
+        - listitem [ref=e85]:
+          - link "Short videos" [ref=e86] [cursor=pointer]:
+            - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQs6gLegQIEhAB
+            - generic [ref=e88]: Short videos
+        - listitem [ref=e89]:
+          - link "Videos" [ref=e90] [cursor=pointer]:
+            - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQtKgLegQIExAB
+            - generic [ref=e92]: Videos
+        - listitem [ref=e93]:
+          - link "Books" [ref=e94] [cursor=pointer]:
+            - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&udm=36&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ0pQJegQICxAB
+            - generic [ref=e96]: Books
+        - listitem [ref=e97]:
+          - link "Web" [ref=e98] [cursor=pointer]:
+            - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&udm=web&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vxYI1tojT_24H7Q4iMwclTCIVQuDMY0JPb1v_H5LS-RieNiyifpU2kjmU0JD_4PiB5DoZVtSDiBBq6gcLjxkRASFN6u6QytTCeS7Qz9auSOCqO37zW07oDGTV3S02Dmf6cWEn0&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQs6gLegQIDxAB
+            - generic [ref=e100]: Web
+        - listitem [ref=e101]:
+          - button "More filters" [ref=e102] [cursor=pointer]:
+            - generic "More filters" [ref=e103]:
+              - generic [ref=e104]:
+                - generic [ref=e105]: More
+                - img [ref=e107]
+    - navigation [ref=e110]:
+      - navigation [ref=e113]:
+        - list [ref=e120]:
+          - listitem [ref=e121]:
+            - link "Add Reviews" [ref=e122] [cursor=pointer]:
+              - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=ledolab+%E2%80%94+marketing+%26+digital+agency+burgas+reviews&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-9Cfw4T646Io9PWWXsdpg0o1a74-DnYy9cc-_XxKjoQCbO4eqwjVqCbxIRzpoACeOaA7GFIyDwIZ0h_3rCG4B3mr0QhjqBInmZdgdRmcx8OmZmYhQwi-s91J5IErNfT5a5XL9ld47BQY5MU48X0agp93oOUiTUXEDAsJtOl6IztU-Ru9GBsckxBIr2G-aZVaXNOEvcXQwzcNOI5J-hIE1fDRRmtjZRYzYIDegkjeRtJGiDdhSb9RptgAeE5uJr4RN8NLKNXLTMEaae7r_Xmrjpu2BKLI&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOcpBUNhG4i8iGPwv5hB4mD7I-LhXM9RMY3BXbicU_sGT7Z7tS-7hICBP7nxs9UjvKWyEaoNv5mdTJ6KBuxdt1qiMJ8Xz8f8fwZWYOzI5lp-ZvNGfj1bpo54OLzLcQ3Pn13yYfpA%3D&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQxKsJKAB6BAgOEAE&ictx=1
+              - generic [ref=e124]: Reviews
+    - heading "Search Results" [level=1] [ref=e125]
+    - generic [ref=e130]:
+      - main [ref=e131]:
+        - tabpanel [ref=e145]:
+          - generic [ref=e147]:
+            - heading "Notices about Filtered Results" [level=2] [ref=e148]
+            - generic [ref=e151]:
+              - text: Some results may have been removed under data protection law in Europe.
+              - link "Learn more" [ref=e152] [cursor=pointer]:
+                - /url: https://www.google.com/policies/faq
+        - generic:
+          - generic:
+            - navigation
+        - navigation
+      - complementary "Complementary results" [ref=e153]:
+        - heading "Complementary results" [level=2] [ref=e154]
+        - generic [ref=e159]:
+          - generic [ref=e166]:
+            - button [ref=e170] [cursor=pointer]
+            - img "Map of LedoLab — Marketing & Digital Agency" [ref=e176]
+          - generic [ref=e179]:
+            - heading "LedoLab — Marketing & Digital Agency" [level=2] [ref=e182]
+            - generic [ref=e183]:
+              - generic [ref=e185]:
+                - text: "5.0"
+                - img "Rated 5.0 out of 5," [ref=e186]
+                - link "56 reviews" [ref=e189] [cursor=pointer]:
+                  - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency,+Sarafovo,+ul.+%22Angel+Dimitrov%22+58,+8016+Burgas&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOcpBUNhG4i8iGPwv5hB4mD6YASKljMf0x05AeGGSOT2o5oW2TCJzGkNAY20cM6LXJHKUq2g%3D&uds=ALYpb_msRTu-oibK4uhw6Gegh_sC2NZbmr6yNlr2g7YhuVhKjXHhTUXvwDMev1NjvVZjikJWMrjuF0D37dOAetxXFmRyfrkSP_dEEL-MfDaAU0883pdFlS3zay23AnnYQEiL4EyWcGRxlg4NFTfoyV7NNhcWPgCmMsBA5NJv96V0I5i6z4oyWI0SyOS349yBJS71asO8dRCzlraqE7beQtGqDQJCngbQqQ&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ3PALegQIGRAE
+                - button "More info" [ref=e192] [cursor=pointer]:
+                  - generic "More info" [ref=e193]:
+                    - img [ref=e194]
+                - text: Marketing agency in Bulgaria
+              - button "More options for LedoLab — Marketing & Digital Agency" [ref=e201] [cursor=pointer]:
+                - img "More options for LedoLab — Marketing & Digital Agency" [ref=e202]:
+                  - img [ref=e204]
+        - generic [ref=e209]:
+          - generic [ref=e218]:
+            - link "Website" [ref=e220] [cursor=pointer]:
+              - /url: https://ledolab.online/
+              - generic [ref=e221]:
+                - img [ref=e223]
+                - generic [ref=e225]: Website
+            - link "Directions" [ref=e227]:
+              - generic [ref=e228] [cursor=pointer]:
+                - img [ref=e230]
+                - generic [ref=e235]: Directions
+            - link "Reviews" [ref=e237] [cursor=pointer]:
+              - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOcpBUNhG4i8iGPwv5hB4mD7B5aVJgr_ixmm-B1ernDl1Br3IjKatARCZUszFqig-OggxEdInSb6tqMzvwKDt0vjpbjES4CUY15T0SIwHhud2QLL4wEY-_go-rHZj-6fG8SDjAU4%3D&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency+Reviews&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ0bkNegQILBAH
+              - generic [ref=e238]:
+                - img [ref=e240]
+                - generic [ref=e242]: Reviews
+            - button "Save" [ref=e247] [cursor=pointer]:
+              - img [ref=e248]
+              - generic [ref=e250]: Save
+            - button "Share" [ref=e253] [cursor=pointer]:
+              - generic [ref=e254]:
+                - img [ref=e256]
+                - generic [ref=e258]: Share
+            - button "Call" [ref=e260] [cursor=pointer]:
+              - generic [ref=e261]:
+                - img [ref=e263]
+                - generic [ref=e265]: Call
+          - separator [ref=e266]
+        - generic [ref=e270]:
+          - generic [ref=e272]:
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - link "Address" [ref=e276] [cursor=pointer]:
+                  - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=ledolab+%E2%80%94+marketing+%26+digital+agency+burgas+address&ludocid=18094225541851922054&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ6BN6BAgoEAI
+                - text: ":"
+              - link "Sarafovo, ul. \"Angel Dimitrov\" 58, 8016 Burgas" [ref=e279] [cursor=pointer]:
+                - /url: /maps/place//data=!4m2!3m1!1s0x40a6979fab7c31cf:0xfb1b9a4353e23e86?sa=X&ved=1t:8290&hl=en-BG&gl=bg&ictx=111
+            - generic [ref=e282]:
+              - generic [ref=e283]: "Phone:"
+              - link "Call phone number 088 737 8386" [ref=e286] [cursor=pointer]:
+                - /url: "#"
+                - text: 088 737 8386
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - link "Hours" [ref=e289] [cursor=pointer]:
+                  - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=ledolab+%E2%80%94+marketing+%26+digital+agency+burgas+hours&ludocid=18094225541851922054&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ6BN6BAgpEAI
+                - text: ":"
+              - button "Closed · Opens 8 AM Tue" [ref=e291]:
+                - generic [ref=e297]: Closed · Opens 8 AM Tue
+            - generic [ref=e302]:
+              - button "Suggest an edit" [ref=e305] [cursor=pointer]
+              - text: ·
+              - link "Own this business?" [ref=e306] [cursor=pointer]:
+                - /url: https://business.google.com/create?hl=en&getstarted&authuser=0&fp=18094225541851922054&gmbsrc=bg-en-et-ip-z-gmb-s-z-l~skp%7Cclaimbz_aoc_a%7Cu&ppsrc=GMBSI
+          - separator [ref=e307]
+        - generic [ref=e311]:
+          - heading "Reviews" [level=3] [ref=e314]
+          - generic [ref=e319]:
+            - generic [ref=e321]:
+              - generic [ref=e322]: Reviews aren't verified
+              - button "More info" [ref=e325] [cursor=pointer]:
+                - img [ref=e327]
+            - link "Google 5 out of 5 56 reviews" [ref=e333] [cursor=pointer]:
+              - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxtDCwNDEyMjU1MbQwNbQ0MjIwNdnAyPiKUc8nNSXfJzFJ4VHDFAXfxKLs1JLMvHQFNQWXzPTMksQcBcf01LzkSoWg1LLM1PLiRawkagAACPZD630AAAA&rldimm=18094225541851922054&tbm=lcl&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ9fQKegQIMBAG#lkt=LocalPoiReviews
+              - generic [ref=e334]:
+                - generic [ref=e335]:
+                  - generic [ref=e338]: Google
+                  - img [ref=e340]
+                - list [ref=e342]:
+                  - listitem "5 out of 5" [ref=e343]: 5/5
+                  - listitem [ref=e344]: 56 reviews
+            - button "Add a review" [ref=e346]:
+              - generic [ref=e348] [cursor=pointer]:
+                - img [ref=e352]
+                - text: Add a review
+            - generic [ref=e359]:
+              - generic: Loading…
+            - link "View all reviews" [ref=e391] [cursor=pointer]:
+              - /url: /search?sca_esv=9ad39f5766d94f6e&hl=en-BG&gl=bg&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-KgiLs-mvUYVq6quE7cLIkln5VggyzizH9mskSQ2wm1mg-IT8gZCn7HTSRLHqx-K9c6OWLFla7MGtPwAaZ-tE89vYrNycJqdZYm58pUzXqkzADv7sd6SRbDIy-vZFBl3AQJbwyT02sY6bDlD7CLuTQ175i8285RLhO6kCYB_tk-iLD4ykab_NShBVMDwV6pJYP5UnwWn6AKnV_a01xAHn_pbJuXheVkqztyEnaOUSd3YsZHwI&q=LedoLab+%E2%80%94+Marketing+%26+Digital+Agency+Reviews&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOcpBUNhG4i8iGPwv5hB4mD7B5aVJgr_ixmm-B1ernDl1Br3IjKatARCZUszFqig-OggxEdInSb6tqMzvwKDt0vjpbjES4CUY15T0SIwHhud2QLL4wEY-_go-rHZj-6fG8SDjAU4%3D&sa=X&ved=2ahUKEwiN_cWP-dmTAxX-xTgGHSclASUQ_4MLegQIMBAO
+              - generic [ref=e392]:
+                - generic [ref=e393]: View all reviews
+                - img [ref=e395]
+          - separator [ref=e397]
+        - generic [ref=e401]:
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - heading "From LedoLab — Marketing & Digital Agency" [level=3] [ref=e408]
+              - button "Report description" [ref=e410]:
+                - img [ref=e411]
+            - generic [ref=e414]:
+              - text: "\"LedoLab — digital маркетинг агентство, системно выводим стартапы и бизнесы от 0 до $100 000 оборота. Мы помогаем компаниям запускать продажи с нуля и масштабировать доход через интернет-маркетинг, рекламу и воронки. Настраиваем Facebook Ads, Google..."
+              - button "show more" [ref=e415] [cursor=pointer]: More
+          - separator [ref=e416]
+        - generic [ref=e422]:
+          - heading "Profiles" [level=3] [ref=e423]
+          - generic [ref=e424]:
+            - link "TikTok" [ref=e428] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@ledolab.online
+              - generic [ref=e434]: TikTok
+            - link "YouTube" [ref=e438] [cursor=pointer]:
+              - /url: https://www.youtube.com/@ledolab.online
+              - generic [ref=e444]: YouTube
+            - link "Instagram" [ref=e448] [cursor=pointer]:
+              - /url: https://www.instagram.com/ledolab.online/
+              - generic [ref=e454]: Instagram
+    - contentinfo:
+      - heading "Footer links" [level=1] [ref=e455]

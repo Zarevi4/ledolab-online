@@ -112,12 +112,12 @@ export default function Services() {
           <h2 className="font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold text-ink mb-4">
             {t.services.title} <span className="gradient-text">{t.services.titleAccent}</span>
           </h2>
-          <div className="inline-block p-4 rounded-2xl bg-red-50 dark:bg-red-950/30 border border-red-200/50 dark:border-red-800/30">
-            <p className="text-[16px] font-bold text-red-600">
+          <div className="inline-block p-4 rounded-2xl gradient-bg">
+            <p className="text-[16px] font-bold text-white">
               {t.hero.promoPrice}{" "}
-              <span className="text-ink-faint line-through">{t.hero.promoOld}</span>
+              <span className="text-white/60 line-through">{t.hero.promoOld}</span>
             </p>
-            <p className="text-[14px] text-ink-light mt-1">{t.hero.promoDesc}</p>
+            <p className="text-[14px] text-white/80 mt-1">{t.hero.promoDesc}</p>
           </div>
         </motion.div>
 
@@ -138,20 +138,17 @@ export default function Services() {
                   <span className="text-[14px] text-ink-faint line-through">€{plan.oldPrice}</span>
                   <span className="text-[14px] text-ink-light">{t.services.perMonth}</span>
                 </div>
-                <ul className="space-y-2 mb-5">
+                <ul className="space-y-2 mb-5 flex-1">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-[13px] text-ink-light leading-relaxed">
                       <Check size={14} className="text-accent mt-0.5 shrink-0" />{f}
                     </li>
                   ))}
                 </ul>
-                <a href="#contact" className={`block text-center text-[14px] font-semibold py-[11px] rounded-xl transition-all ${plan.highlighted ? "gradient-bg text-white hover:opacity-90" : "border border-border text-ink hover:border-accent/40 hover:text-accent"}`}>
-                  {t.services.cta}
-                </a>
               </div>
 
               {/* Price breakdown table */}
-              <div className="p-6 pt-0">
+              <div className="px-6 pb-4">
                 <p className="text-[12px] font-semibold text-ink-faint mb-2 text-center">Если заказывать по отдельности:</p>
                 <table className="w-full text-[12px] border-collapse">
                   <thead>
@@ -172,6 +169,13 @@ export default function Services() {
                 <p className="mt-2 text-center text-[13px] font-bold text-ink">
                   Итого: <span className="line-through text-ink-faint">{plan.breakdownTotal}</span> / месяц
                 </p>
+              </div>
+
+              {/* CTA button at very bottom */}
+              <div className="px-6 pb-6">
+                <a href="#contact" className={`block text-center text-[14px] font-semibold py-[11px] rounded-xl transition-all ${plan.highlighted ? "gradient-bg text-white hover:opacity-90" : "border border-border text-ink hover:border-accent/40 hover:text-accent"}`}>
+                  {t.services.cta}
+                </a>
               </div>
             </motion.div>
           ))}

@@ -1,0 +1,357 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key." [ref=e8]
+    - search [ref=e14]:
+      - generic [ref=e15]:
+        - combobox [ref=e17]: LedoLab — Marketing & Digital Agency
+        - button "Search" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+        - button "Close" [ref=e239] [cursor=pointer]:
+          - generic [ref=e240]: 
+    - region "Available search options for this area" [ref=e127]:
+      - generic [ref=e130]:
+        - button "Restaurants" [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]:
+            - generic [ref=e135]: 
+            - generic [ref=e136]: Restaurants
+        - button "Hotels" [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]:
+            - generic [ref=e141]: 
+            - generic [ref=e142]: Hotels
+        - button "Things to do" [ref=e144] [cursor=pointer]:
+          - generic [ref=e145]:
+            - generic [ref=e147]: 
+            - generic [ref=e148]: Things to do
+        - button "Transit" [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic [ref=e153]: 
+            - generic [ref=e154]: Transit
+        - button "Parking" [ref=e156] [cursor=pointer]:
+          - generic [ref=e157]:
+            - generic [ref=e159]: 
+            - generic [ref=e160]: Parking
+        - button "Pharmacies" [ref=e162] [cursor=pointer]:
+          - generic [ref=e163]:
+            - generic [ref=e165]: 
+            - generic [ref=e166]: Pharmacies
+        - button "ATMs" [ref=e168] [cursor=pointer]:
+          - generic [ref=e169]:
+            - generic [ref=e171]: 
+            - generic [ref=e172]: ATMs
+      - button "Next page" [ref=e173] [cursor=pointer]:
+        - generic [ref=e174]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menu" [ref=e29] [cursor=pointer]:
+              - generic [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Saved" [ref=e33] [cursor=pointer]:
+              - generic [ref=e35]: 
+              - generic [ref=e37]: Saved
+          - listitem [ref=e38]:
+            - button "Recents" [ref=e39] [cursor=pointer]:
+              - generic [ref=e41]: 
+              - generic [ref=e43]: Recents
+          - listitem [ref=e176]:
+            - button "LedoLab — Marketing & Digital Agency" [ref=e241] [cursor=pointer]:
+              - generic [ref=e243]: LedoLab — Marketing & Digital Agency
+            - button [ref=e244] [cursor=pointer]
+          - listitem [ref=e45]:
+            - button "Get app" [ref=e46] [cursor=pointer]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: Get app
+        - main "LedoLab — Marketing & Digital Agency" [ref=e249]:
+          - generic [ref=e250]:
+            - button "Photo of LedoLab — Marketing & Digital Agency" [active] [ref=e252] [cursor=pointer]:
+              - img [ref=e253]
+            - button "See photos" [ref=e254] [cursor=pointer]:
+              - generic [ref=e255]: 
+              - generic [ref=e256]: See photos
+          - generic [ref=e259]:
+            - heading "LedoLab — Marketing & Digital Agency" [level=1] [ref=e261]: LedoLab — Marketing & Digital Agency
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - text: "5.0"
+                    - img "5.0 stars" [ref=e267]
+                  - img "56 reviews" [ref=e275]: (56)
+                - button "Learn more about legal disclosure regarding public reviews on Google Maps" [ref=e281]:
+                  - generic [ref=e285]: 
+              - button "Marketing agency" [ref=e289]
+          - tablist [ref=e292]:
+            - tab "Overview of LedoLab — Marketing & Digital Agency" [selected] [ref=e293]:
+              - generic [ref=e295]: Overview
+            - tab "Reviews for LedoLab — Marketing & Digital Agency" [ref=e297]:
+              - generic [ref=e299]: Reviews
+          - region "Actions for LedoLab — Marketing & Digital Agency" [ref=e301]:
+            - button "Directions" [ref=e303] [cursor=pointer]:
+              - generic [ref=e305]: 
+              - generic [ref=e306]: Directions
+            - button "Save" [ref=e308] [cursor=pointer]:
+              - generic [ref=e310]: 
+              - generic [ref=e311]: Save
+            - button "Nearby" [ref=e313] [cursor=pointer]:
+              - generic [ref=e315]: 
+              - generic [ref=e316]: Nearby
+            - button "Send to phone" [ref=e318] [cursor=pointer]:
+              - generic [ref=e320]: 
+              - generic [ref=e321]: Send to phone
+            - button "Share" [ref=e323] [cursor=pointer]:
+              - generic [ref=e325]: 
+              - generic [ref=e326]: Share
+          - region "Information for LedoLab — Marketing & Digital Agency" [ref=e329]:
+            - generic [ref=e330]:
+              - 'button "Address: Sarafovo, ul. \"Angel Dimitrov\" 58, 8016 Burgas" [ref=e331] [cursor=pointer]':
+                - generic [ref=e332]:
+                  - generic [ref=e334]: 
+                  - generic [ref=e336]: Sarafovo, ul. "Angel Dimitrov" 58, 8016 Burgas
+              - button "Copy address" [ref=e339] [cursor=pointer]:
+                - generic [ref=e341]: 
+            - button "Hours Closed · Opens 8 AM Tue Show open hours for the week" [ref=e343] [cursor=pointer]:
+              - img "Hours" [ref=e344]: 
+              - generic [ref=e346]:
+                - generic [ref=e348]: Closed · Opens 8 AM Tue
+                - img "Show open hours for the week" [ref=e349]: 
+            - generic [ref=e350]:
+              - 'link "Website: ledolab.online" [ref=e351] [cursor=pointer]':
+                - /url: https://ledolab.online/
+                - generic [ref=e352]:
+                  - generic [ref=e354]: 
+                  - generic [ref=e356]: ledolab.online
+              - generic [ref=e357]:
+                - link "Open website" [ref=e359] [cursor=pointer]:
+                  - /url: https://ledolab.online/
+                  - generic [ref=e361]: 
+                - button "Copy website" [ref=e363] [cursor=pointer]:
+                  - generic [ref=e365]: 
+            - generic [ref=e366]:
+              - 'button "Phone: 088 737 8386" [ref=e367] [cursor=pointer]':
+                - generic [ref=e368]:
+                  - generic [ref=e370]: 
+                  - generic [ref=e372]: 088 737 8386
+              - generic [ref=e373]:
+                - button "Copy phone number" [ref=e375] [cursor=pointer]:
+                  - generic [ref=e377]: 
+                - link "Call phone number" [ref=e379] [cursor=pointer]:
+                  - /url: tel:0887378386
+                  - generic [ref=e381]: 
+            - generic [ref=e382]:
+              - 'button "Plus code: HG6J+XR Burgas" [ref=e383] [cursor=pointer]':
+                - generic [ref=e384]:
+                  - generic [ref=e386]: 
+                  - generic [ref=e388]: HG6J+XR Burgas
+              - generic [ref=e389]:
+                - button "Copy plus code" [ref=e391] [cursor=pointer]:
+                  - generic [ref=e393]: 
+                - button "Learn more about plus codes" [ref=e395] [cursor=pointer]:
+                  - generic [ref=e397]: 
+          - button "Suggest an edit" [ref=e401] [cursor=pointer]:
+            - generic [ref=e402]:
+              - generic [ref=e403]: 
+              - generic [ref=e404]: Suggest an edit
+          - generic [ref=e407]:
+            - heading "Photos & videos" [level=2] [ref=e409]
+            - region "Photos of LedoLab — Marketing & Digital Agency" [ref=e410]:
+              - generic [ref=e413]:
+                - generic [ref=e414] [cursor=pointer]:
+                  - button "All" [ref=e415]
+                  - generic:
+                    - generic: All
+                - generic [ref=e416] [cursor=pointer]:
+                  - button "By owner" [ref=e417]
+                  - generic:
+                    - generic: By owner
+          - button "Add photos & videos" [ref=e422] [cursor=pointer]:
+            - generic [ref=e423]:
+              - generic [ref=e424]: 
+              - generic [ref=e425]: Add photos & videos
+          - heading "Review summary" [level=2] [ref=e429]
+          - generic [ref=e431] [cursor=pointer]:
+            - table [ref=e433]:
+              - rowgroup [ref=e434]:
+                - img "5 stars, 56 reviews" [ref=e435]: "5"
+                - img "4 stars, 0 reviews" [ref=e438]: "4"
+                - img "3 stars, 0 reviews" [ref=e441]: "3"
+                - img "2 stars, 0 reviews" [ref=e444]: "2"
+                - img "1 stars, 0 reviews" [ref=e447]: "1"
+            - generic [ref=e450]:
+              - generic [ref=e451]: "5.0"
+              - img "5.0 stars" [ref=e452]
+              - button "56 reviews" [ref=e458]:
+                - generic [ref=e460]: 56 reviews
+          - generic [ref=e462]:
+            - generic [ref=e463]: Reviews aren't verified
+            - button "Learn more about legal disclosure regarding public reviews on Google Maps" [ref=e467]:
+              - generic [ref=e471]: 
+          - button "Write a review" [ref=e475] [cursor=pointer]:
+            - generic [ref=e476]:
+              - generic [ref=e477]: 
+              - generic [ref=e478]: Write a review
+          - generic [ref=e481]:
+            - generic [ref=e483]:
+              - heading "Reviews" [level=2] [ref=e486]
+              - button "Search reviews" [ref=e489] [cursor=pointer]:
+                - generic [ref=e491]: 
+            - button "Sort reviews" [ref=e493] [cursor=pointer]:
+              - generic [ref=e494]:
+                - generic [ref=e495]: 
+                - generic [ref=e496]: Sort
+          - radiogroup "Refine reviews" [ref=e497]:
+            - radio "All reviews" [checked] [ref=e499] [cursor=pointer]:
+              - generic [ref=e500]:
+                - generic [ref=e501]: 
+                - generic [ref=e502]: All
+            - radio "advertising, mentioned in 14 reviews" [ref=e504] [cursor=pointer]:
+              - generic [ref=e505]:
+                - generic [ref=e506]: advertising
+                - generic [ref=e507]: "14"
+            - radio "audit, mentioned in 10 reviews" [ref=e509] [cursor=pointer]:
+              - generic [ref=e510]:
+                - generic [ref=e511]: audit
+                - generic [ref=e512]: "10"
+            - radio "funnel, mentioned in 5 reviews" [ref=e514] [cursor=pointer]:
+              - generic [ref=e515]:
+                - generic [ref=e516]: funnel
+                - generic [ref=e517]: "5"
+            - radio "analytics, mentioned in 5 reviews" [ref=e519] [cursor=pointer]:
+              - generic [ref=e520]:
+                - generic [ref=e521]: analytics
+                - generic [ref=e522]: "5"
+            - button "View 6 more Topics" [ref=e524] [cursor=pointer]:
+              - generic [ref=e526]: "+6"
+          - generic "Mary CatCatCat" [ref=e527]:
+            - generic [ref=e529]:
+              - button "Photo of Mary CatCatCat" [ref=e530]
+              - generic [ref=e532]:
+                - button "Mary CatCatCat 8 reviews" [ref=e534]:
+                  - generic [ref=e535]: Mary CatCatCat
+                  - generic [ref=e536]: 8 reviews
+                - button "Actions for Mary CatCatCat's review" [ref=e537] [cursor=pointer]:
+                  - generic [ref=e539]: 
+              - generic [ref=e540]:
+                - generic [ref=e541]:
+                  - img "5 stars" [ref=e542]:
+                    - generic [ref=e543]: 
+                    - generic [ref=e544]: 
+                    - generic [ref=e545]: 
+                    - generic [ref=e546]: 
+                    - generic [ref=e547]: 
+                  - generic [ref=e548]: a month ago
+                - generic [ref=e550]: We turned to LedoLab when we realized that marketing was working erratically and there was no clear picture of customer sources. The team conducted a detailed audit, identified weaknesses, and suggested specific steps for improvement. After implementing the recommendations, the results became more predictable.
+                - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e552] [cursor=pointer]:
+                  - generic [ref=e553]: Translated by Google ・
+                  - text: See original (Ukrainian)
+                - generic [ref=e554]:
+                  - button "Like" [ref=e555]:
+                    - generic [ref=e556] [cursor=pointer]:
+                      - generic [ref=e557]: 
+                      - generic [ref=e559]: Like
+                  - button "Share Mary CatCatCat's review." [ref=e560]:
+                    - generic [ref=e561] [cursor=pointer]:
+                      - generic [ref=e562]: 
+                      - generic [ref=e563]: Share
+          - generic "Андрей Банатурский" [ref=e567]:
+            - generic [ref=e569]:
+              - button "Photo of Андрей Банатурский" [ref=e570]
+              - generic [ref=e572]:
+                - button "Андрей Банатурский 1 review" [ref=e574]:
+                  - generic [ref=e575]: Андрей Банатурский
+                  - generic [ref=e576]: 1 review
+                - button "Actions for Андрей Банатурский's review" [ref=e577] [cursor=pointer]:
+                  - generic [ref=e579]: 
+              - generic [ref=e580]:
+                - generic [ref=e581]:
+                  - img "5 stars" [ref=e582]:
+                    - generic [ref=e583]: 
+                    - generic [ref=e584]: 
+                    - generic [ref=e585]: 
+                    - generic [ref=e586]: 
+                    - generic [ref=e587]: 
+                  - generic [ref=e588]: a month ago
+                - generic [ref=e590]: We sought advice on scaling. Instead of superficial advice, we received a deep analysis of the current situation and a realistic growth plan. This helped us avoid unnecessary expenses. We are pleased with the result.
+                - switch "Translated by Google ・ See original (Russian)" [checked] [ref=e592] [cursor=pointer]:
+                  - generic [ref=e593]: Translated by Google ・
+                  - text: See original (Russian)
+                - generic [ref=e594]:
+                  - button "Like" [ref=e595]:
+                    - generic [ref=e596] [cursor=pointer]:
+                      - generic [ref=e597]: 
+                      - generic [ref=e599]: Like
+                  - button "Share Андрей Банатурский's review." [ref=e600]:
+                    - generic [ref=e601] [cursor=pointer]:
+                      - generic [ref=e602]: 
+                      - generic [ref=e603]: Share
+          - generic "Олександра Лагодна" [ref=e607]:
+            - generic [ref=e609]:
+              - button "Photo of Олександра Лагодна" [ref=e610]
+              - generic [ref=e612]:
+                - button "Олександра Лагодна 1 review" [ref=e614]:
+                  - generic [ref=e615]: Олександра Лагодна
+                  - generic [ref=e616]: 1 review
+                - button "Actions for Олександра Лагодна's review" [ref=e617] [cursor=pointer]:
+                  - generic [ref=e619]: 
+              - generic [ref=e620]:
+                - generic [ref=e621]:
+                  - img "5 stars" [ref=e622]:
+                    - generic [ref=e623]: 
+                    - generic [ref=e624]: 
+                    - generic [ref=e625]: 
+                    - generic [ref=e626]: 
+                    - generic [ref=e627]: 
+                  - generic [ref=e628]: 2 months ago
+                - generic [ref=e630]: We ordered a marketing audit, received clear conclusions and specific recommendations. The approach is responsible, they analyzed the business before offering anything. You can see the experience of working with different niches, the advice was spot on!
+                - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e632] [cursor=pointer]:
+                  - generic [ref=e633]: Translated by Google ・
+                  - text: See original (Ukrainian)
+                - generic [ref=e634]:
+                  - button "Like" [ref=e635]:
+                    - generic [ref=e636] [cursor=pointer]:
+                      - generic [ref=e637]: 
+                      - generic [ref=e639]: Like
+                  - button "Share Олександра Лагодна's review." [ref=e640]:
+                    - generic [ref=e641] [cursor=pointer]:
+                      - generic [ref=e642]: 
+                      - generic [ref=e643]: Share
+          - button "More reviews (53)" [ref=e647]:
+            - generic [ref=e649] [cursor=pointer]: More reviews (53)
+          - heading "Web results" [level=2] [ref=e653]
+          - region [ref=e656]
+          - link "About this data" [ref=e695] [cursor=pointer]:
+            - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=en
+            - generic [ref=e697]: About this data
+          - heading "Get the most out of Google Maps Sign in" [level=2] [ref=e701]:
+            - generic [ref=e702]: Get the most out of Google Maps
+            - button "Sign in" [ref=e705] [cursor=pointer]:
+              - generic [ref=e707]: Sign in
+      - button "Collapse side panel" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: 
+    - generic [ref=e186]:
+      - button "Google apps" [ref=e190] [cursor=pointer]:
+        - img [ref=e191]
+      - link "Sign in" [ref=e194] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FLedoLab%2B%25E2%2580%2594%2BMarketing%2B%2526%2BDigital%2BAgency%2F%4042.5624315%2C27.5295119%2C17z%2Fdata%3D!3m1!4b1!4m6!3m5!1s0x40a6979fab7c31cf%3A0xfb1b9a4353e23e86!8m2!3d42.5624315!4d27.5320868!16s%252Fg%252F11ywq9k_c1%3Fg_ep%3DEgoyMDI2MDQwMS4wIMCaEyoASAFQAw%253D%253D&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Show Your Location" [ref=e197] [cursor=pointer]:
+          - generic [ref=e199]: 
+        - generic [ref=e201] [cursor=pointer]:
+          - button "Zoom in" [ref=e202]
+          - button "Zoom out" [ref=e205]
+      - button "Browse Street View images" [ref=e213]
+      - generic [ref=e215]:
+        - generic "Interactive map" [ref=e216]
+        - generic [ref=e220] [cursor=pointer]:
+          - generic [ref=e221]: 
+          - generic [ref=e222]: Layers
+        - button "Layers" [ref=e223] [cursor=pointer]
+    - generic [ref=e225]:
+      - contentinfo [ref=e228]:
+        - text: Imagery ©2026 , Map data ©2026
+        - button "Bulgaria" [ref=e229] [cursor=pointer]
+        - button "Terms" [ref=e230] [cursor=pointer]
+        - button "Privacy" [ref=e231] [cursor=pointer]
+        - button "Send Product Feedback" [ref=e232] [cursor=pointer]
+      - button "100 m" [ref=e708] [cursor=pointer]: 100 m

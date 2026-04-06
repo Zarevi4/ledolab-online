@@ -1,0 +1,2 @@
+[     316ms] [ERROR] Executing inline event handler violates the following Content Security Policy directive 'script-src 'nonce-3J9ArQ3ZduJBC72Qbu_jcQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:'. Note that 'unsafe-inline' is ignored if either a hash or nonce value is present in the source list. The action has been blocked. @ https://search.google.com/local/reviews?placeid=ChIJzzF8q59pl0ARhj7iU0OaG_s:5
+[     545ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://search.google.com/favicon.ico:0

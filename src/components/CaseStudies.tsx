@@ -192,10 +192,9 @@ export default function CaseStudies() {
                     {/* CTA button */}
                     <Link
                       href={`/cases/${cs.id}`}
-                      className="mt-4 pt-3 border-t border-border flex items-center gap-1.5 text-[13px] font-semibold text-accent hover:gap-2.5 transition-all"
+                      className="mt-4 block text-center gradient-bg text-white text-[13px] font-semibold py-2.5 rounded-xl hover:opacity-90 transition-opacity"
                     >
                       {t.casePage?.go || "Подробнее"}
-                      <ArrowUpRight size={14} />
                     </Link>
                   </div>
                 </div>

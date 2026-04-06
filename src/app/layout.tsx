@@ -102,6 +102,43 @@ const jsonLd = {
         name: "Денис Ледовской",
         jobTitle: "Founder & CEO",
       },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "56",
+        bestRating: "5",
+        worstRating: "1",
+      },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ledolab.online/#localbusiness",
+      name: "LedoLab - Marketing & Digital Agency",
+      image: "https://ledolab.online/images/homepage/owner-full.jpg",
+      telephone: "+380638619285",
+      email: "support@ledolab.online",
+      url: "https://ledolab.online",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "ul. Angel Dimitrov 58",
+        addressLocality: "Burgas",
+        postalCode: "8016",
+        addressRegion: "Sarafovo",
+        addressCountry: "BG",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 42.5624315,
+        longitude: 27.5320868,
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "56",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      priceRange: "€€",
     },
     {
       "@type": "WebSite",
@@ -224,6 +261,12 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${sora.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://static.tildacdn.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0B0B10" media="(prefers-color-scheme: dark)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

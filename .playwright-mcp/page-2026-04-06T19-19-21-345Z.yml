@@ -1,0 +1,483 @@
+- generic "Google Maps" [ref=e2]:
+  - generic [ref=e3]:
+    - application "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key." [ref=e8]
+    - search [ref=e14]:
+      - button "Back" [ref=e710] [cursor=pointer]:
+        - generic [ref=e711]: 
+      - generic [ref=e15]:
+        - combobox [ref=e17]: LedoLab — Marketing & Digital Agency
+        - button "Search" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20]: 
+        - button "Close" [ref=e239] [cursor=pointer]:
+          - generic [ref=e240]: 
+    - region "Available search options for this area" [ref=e127]:
+      - generic [ref=e130]:
+        - button "Restaurants" [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]:
+            - generic [ref=e135]: 
+            - generic [ref=e136]: Restaurants
+        - button "Hotels" [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]:
+            - generic [ref=e141]: 
+            - generic [ref=e142]: Hotels
+        - button "Things to do" [ref=e144] [cursor=pointer]:
+          - generic [ref=e145]:
+            - generic [ref=e147]: 
+            - generic [ref=e148]: Things to do
+        - button "Transit" [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic [ref=e153]: 
+            - generic [ref=e154]: Transit
+        - button "Parking" [ref=e156] [cursor=pointer]:
+          - generic [ref=e157]:
+            - generic [ref=e159]: 
+            - generic [ref=e160]: Parking
+        - button "Pharmacies" [ref=e162] [cursor=pointer]:
+          - generic [ref=e163]:
+            - generic [ref=e165]: 
+            - generic [ref=e166]: Pharmacies
+        - button "ATMs" [ref=e168] [cursor=pointer]:
+          - generic [ref=e169]:
+            - generic [ref=e171]: 
+            - generic [ref=e172]: ATMs
+      - button "Next page" [ref=e173] [cursor=pointer]:
+        - generic [ref=e174]: 
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - list [ref=e27]:
+          - listitem [ref=e28]:
+            - button "Menu" [ref=e29] [cursor=pointer]:
+              - generic [ref=e31]: 
+          - listitem [ref=e32]:
+            - button "Saved" [ref=e33] [cursor=pointer]:
+              - generic [ref=e35]: 
+              - generic [ref=e37]: Saved
+          - listitem [ref=e38]:
+            - button "Recents" [ref=e39] [cursor=pointer]:
+              - generic [ref=e41]: 
+              - generic [ref=e43]: Recents
+          - listitem [ref=e176]:
+            - button "LedoLab — Marketing & Digital Agency" [ref=e241] [cursor=pointer]:
+              - generic [ref=e243]: LedoLab — Marketing & Digital Agency
+            - button [ref=e244] [cursor=pointer]
+          - listitem [ref=e45]:
+            - button "Get app" [ref=e46] [cursor=pointer]:
+              - generic [ref=e48]: 
+              - generic [ref=e50]: Get app
+        - main "LedoLab — Marketing & Digital Agency" [ref=e249]:
+          - tablist [ref=e292]:
+            - tab "Overview of LedoLab — Marketing & Digital Agency" [ref=e293]:
+              - generic [ref=e295]: Overview
+            - tab "Reviews for LedoLab — Marketing & Digital Agency" [active] [selected] [ref=e297]:
+              - generic [ref=e299]: Reviews
+          - generic [ref=e712]:
+            - generic [ref=e714]:
+              - table [ref=e716]:
+                - rowgroup [ref=e717]:
+                  - img "5 stars, 56 reviews" [ref=e718]: "5"
+                  - img "4 stars, 0 reviews" [ref=e721]: "4"
+                  - img "3 stars, 0 reviews" [ref=e724]: "3"
+                  - img "2 stars, 0 reviews" [ref=e727]: "2"
+                  - img "1 stars, 0 reviews" [ref=e730]: "1"
+              - generic [ref=e733]:
+                - generic [ref=e734]: "5.0"
+                - img "5.0 stars" [ref=e735]
+                - generic [ref=e741]: 56 reviews
+            - generic [ref=e743]:
+              - generic [ref=e744]: Reviews aren't verified
+              - button "Learn more about legal disclosure regarding public reviews on Google Maps" [ref=e748]:
+                - generic [ref=e752]: 
+            - button "Write a review" [ref=e756] [cursor=pointer]:
+              - generic [ref=e757]:
+                - generic [ref=e758]: 
+                - generic [ref=e759]: Write a review
+            - generic [ref=e762]:
+              - button "Search reviews" [ref=e768] [cursor=pointer]:
+                - generic [ref=e770]: 
+              - button "Sort reviews" [ref=e772] [cursor=pointer]:
+                - generic [ref=e773]:
+                  - generic [ref=e774]: 
+                  - generic [ref=e775]: Sort
+            - radiogroup "Refine reviews" [ref=e776]:
+              - radio "All reviews" [checked] [ref=e778] [cursor=pointer]:
+                - generic [ref=e780]: All
+              - radio "advertising, mentioned in 14 reviews" [ref=e782] [cursor=pointer]:
+                - generic [ref=e783]:
+                  - generic [ref=e784]: advertising
+                  - generic [ref=e785]: "14"
+              - radio "audit, mentioned in 10 reviews" [ref=e787] [cursor=pointer]:
+                - generic [ref=e788]:
+                  - generic [ref=e789]: audit
+                  - generic [ref=e790]: "10"
+              - radio "funnel, mentioned in 5 reviews" [ref=e792] [cursor=pointer]:
+                - generic [ref=e793]:
+                  - generic [ref=e794]: funnel
+                  - generic [ref=e795]: "5"
+              - radio "analytics, mentioned in 5 reviews" [ref=e797] [cursor=pointer]:
+                - generic [ref=e798]:
+                  - generic [ref=e799]: analytics
+                  - generic [ref=e800]: "5"
+              - radio "sales, mentioned in 5 reviews" [ref=e802] [cursor=pointer]:
+                - generic [ref=e803]:
+                  - generic [ref=e804]: sales
+                  - generic [ref=e805]: "5"
+              - radio "understanding, mentioned in 4 reviews" [ref=e807] [cursor=pointer]:
+                - generic [ref=e808]:
+                  - generic [ref=e809]: understanding
+                  - generic [ref=e810]: "4"
+              - radio "height, mentioned in 3 reviews" [ref=e812] [cursor=pointer]:
+                - generic [ref=e813]:
+                  - generic [ref=e814]: height
+                  - generic [ref=e815]: "3"
+              - radio "budget, mentioned in 3 reviews" [ref=e817] [cursor=pointer]:
+                - generic [ref=e818]:
+                  - generic [ref=e819]: budget
+                  - generic [ref=e820]: "3"
+              - radio "action plan, mentioned in 2 reviews" [ref=e822] [cursor=pointer]:
+                - generic [ref=e823]:
+                  - generic [ref=e824]: action plan
+                  - generic [ref=e825]: "2"
+              - radio "theory, mentioned in 2 reviews" [ref=e827] [cursor=pointer]:
+                - generic [ref=e828]:
+                  - generic [ref=e829]: theory
+                  - generic [ref=e830]: "2"
+            - generic [ref=e831]:
+              - generic "Mary CatCatCat" [ref=e832]:
+                - generic [ref=e834]:
+                  - button "Photo of Mary CatCatCat" [ref=e835]
+                  - generic [ref=e837]:
+                    - button "Mary CatCatCat 8 reviews" [ref=e839]:
+                      - generic [ref=e840]: Mary CatCatCat
+                      - generic [ref=e841]: 8 reviews
+                    - button "Actions for Mary CatCatCat's review" [ref=e842] [cursor=pointer]:
+                      - generic [ref=e844]: 
+                  - generic [ref=e845]:
+                    - generic [ref=e846]:
+                      - img "5 stars" [ref=e847]:
+                        - generic [ref=e848]: 
+                        - generic [ref=e849]: 
+                        - generic [ref=e850]: 
+                        - generic [ref=e851]: 
+                        - generic [ref=e852]: 
+                      - generic [ref=e853]: a month ago
+                    - generic [ref=e855]: We turned to LedoLab when we realized that marketing was working erratically and there was no clear picture of customer sources. The team conducted a detailed audit, identified weaknesses, and suggested specific steps for improvement. After implementing the recommendations, the results became more predictable.
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e857] [cursor=pointer]:
+                      - generic [ref=e858]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e859]:
+                      - button "Like" [ref=e860]:
+                        - generic [ref=e861] [cursor=pointer]:
+                          - generic [ref=e862]: 
+                          - generic [ref=e864]: Like
+                      - button "Share Mary CatCatCat's review." [ref=e865]:
+                        - generic [ref=e866] [cursor=pointer]:
+                          - generic [ref=e867]: 
+                          - generic [ref=e868]: Share
+              - generic "Андрей Банатурский" [ref=e872]:
+                - generic [ref=e874]:
+                  - button "Photo of Андрей Банатурский" [ref=e875]
+                  - generic [ref=e877]:
+                    - button "Андрей Банатурский 1 review" [ref=e879]:
+                      - generic [ref=e880]: Андрей Банатурский
+                      - generic [ref=e881]: 1 review
+                    - button "Actions for Андрей Банатурский's review" [ref=e882] [cursor=pointer]:
+                      - generic [ref=e884]: 
+                  - generic [ref=e885]:
+                    - generic [ref=e886]:
+                      - img "5 stars" [ref=e887]:
+                        - generic [ref=e888]: 
+                        - generic [ref=e889]: 
+                        - generic [ref=e890]: 
+                        - generic [ref=e891]: 
+                        - generic [ref=e892]: 
+                      - generic [ref=e893]: a month ago
+                    - generic [ref=e895]: We sought advice on scaling. Instead of superficial advice, we received a deep analysis of the current situation and a realistic growth plan. This helped us avoid unnecessary expenses. We are pleased with the result.
+                    - switch "Translated by Google ・ See original (Russian)" [checked] [ref=e897] [cursor=pointer]:
+                      - generic [ref=e898]: Translated by Google ・
+                      - text: See original (Russian)
+                    - generic [ref=e899]:
+                      - button "Like" [ref=e900]:
+                        - generic [ref=e901] [cursor=pointer]:
+                          - generic [ref=e902]: 
+                          - generic [ref=e904]: Like
+                      - button "Share Андрей Банатурский's review." [ref=e905]:
+                        - generic [ref=e906] [cursor=pointer]:
+                          - generic [ref=e907]: 
+                          - generic [ref=e908]: Share
+              - generic "Олександра Лагодна" [ref=e912]:
+                - generic [ref=e914]:
+                  - button "Photo of Олександра Лагодна" [ref=e915]
+                  - generic [ref=e917]:
+                    - button "Олександра Лагодна 1 review" [ref=e919]:
+                      - generic [ref=e920]: Олександра Лагодна
+                      - generic [ref=e921]: 1 review
+                    - button "Actions for Олександра Лагодна's review" [ref=e922] [cursor=pointer]:
+                      - generic [ref=e924]: 
+                  - generic [ref=e925]:
+                    - generic [ref=e926]:
+                      - img "5 stars" [ref=e927]:
+                        - generic [ref=e928]: 
+                        - generic [ref=e929]: 
+                        - generic [ref=e930]: 
+                        - generic [ref=e931]: 
+                        - generic [ref=e932]: 
+                      - generic [ref=e933]: 2 months ago
+                    - generic [ref=e935]: We ordered a marketing audit, received clear conclusions and specific recommendations. The approach is responsible, they analyzed the business before offering anything. You can see the experience of working with different niches, the advice was spot on!
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e937] [cursor=pointer]:
+                      - generic [ref=e938]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e939]:
+                      - button "Like" [ref=e940]:
+                        - generic [ref=e941] [cursor=pointer]:
+                          - generic [ref=e942]: 
+                          - generic [ref=e944]: Like
+                      - button "Share Олександра Лагодна's review." [ref=e945]:
+                        - generic [ref=e946] [cursor=pointer]:
+                          - generic [ref=e947]: 
+                          - generic [ref=e948]: Share
+              - generic "Дмитрий" [ref=e952]:
+                - generic [ref=e954]:
+                  - button "Photo of Дмитрий" [ref=e955]
+                  - generic [ref=e957]:
+                    - button "Дмитрий 1 review" [ref=e959]:
+                      - generic [ref=e960]: Дмитрий
+                      - generic [ref=e961]: 1 review
+                    - button "Actions for Дмитрий's review" [ref=e962] [cursor=pointer]:
+                      - generic [ref=e964]: 
+                  - generic [ref=e965]:
+                    - generic [ref=e966]:
+                      - img "5 stars" [ref=e967]:
+                        - generic [ref=e968]: 
+                        - generic [ref=e969]: 
+                        - generic [ref=e970]: 
+                        - generic [ref=e971]: 
+                        - generic [ref=e972]: 
+                      - generic [ref=e973]: a month ago
+                    - generic [ref=e975]: "We contacted them when the advertising stopped working. After the analysis, it became clear what the problem was and how to fix it. I liked the approach: first the analysis and numbers, and only then the recommendations and actions"
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e977] [cursor=pointer]:
+                      - generic [ref=e978]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e979]:
+                      - button "Like" [ref=e980]:
+                        - generic [ref=e981] [cursor=pointer]:
+                          - generic [ref=e982]: 
+                          - generic [ref=e984]: Like
+                      - button "Share Дмитрий's review." [ref=e985]:
+                        - generic [ref=e986] [cursor=pointer]:
+                          - generic [ref=e987]: 
+                          - generic [ref=e988]: Share
+              - generic "plvstid" [ref=e992]:
+                - generic [ref=e994]:
+                  - button "Photo of plvstid" [ref=e995]
+                  - generic [ref=e997]:
+                    - button "plvstid 1 review" [ref=e999]:
+                      - generic [ref=e1000]: plvstid
+                      - generic [ref=e1001]: 1 review
+                    - button "Actions for plvstid's review" [ref=e1002] [cursor=pointer]:
+                      - generic [ref=e1004]: 
+                  - generic [ref=e1005]:
+                    - generic [ref=e1006]:
+                      - img "5 stars" [ref=e1007]:
+                        - generic [ref=e1008]: 
+                        - generic [ref=e1009]: 
+                        - generic [ref=e1010]: 
+                        - generic [ref=e1011]: 
+                        - generic [ref=e1012]: 
+                      - generic [ref=e1013]: 2 months ago
+                    - generic [ref=e1015]: Strong expertise in digital and advertising. Experience working with various markets is evident. We received a clear strategy without unnecessary theory.
+                    - switch "Translated by Google ・ See original (Russian)" [checked] [ref=e1017] [cursor=pointer]:
+                      - generic [ref=e1018]: Translated by Google ・
+                      - text: See original (Russian)
+                    - generic [ref=e1019]:
+                      - button "Like" [ref=e1020]:
+                        - generic [ref=e1021] [cursor=pointer]:
+                          - generic [ref=e1022]: 
+                          - generic [ref=e1024]: Like
+                      - button "Share plvstid's review." [ref=e1025]:
+                        - generic [ref=e1026] [cursor=pointer]:
+                          - generic [ref=e1027]: 
+                          - generic [ref=e1028]: Share
+              - generic "Алексей Пикалов" [ref=e1032]:
+                - generic [ref=e1034]:
+                  - button "Photo of Алексей Пикалов" [ref=e1035]
+                  - generic [ref=e1037]:
+                    - button "Алексей Пикалов 1 review" [ref=e1039]:
+                      - generic [ref=e1040]: Алексей Пикалов
+                      - generic [ref=e1041]: 1 review
+                    - button "Actions for Алексей Пикалов's review" [ref=e1042] [cursor=pointer]:
+                      - generic [ref=e1044]: 
+                  - generic [ref=e1045]:
+                    - generic [ref=e1046]:
+                      - img "5 stars" [ref=e1047]:
+                        - generic [ref=e1048]: 
+                        - generic [ref=e1049]: 
+                        - generic [ref=e1050]: 
+                        - generic [ref=e1051]: 
+                        - generic [ref=e1052]: 
+                      - generic [ref=e1053]: a month ago
+                    - generic [ref=e1055]: We received not just an audit, but a clear step-by-step marketing development plan. Many ideas have already been implemented and we see positive dynamics.
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e1057] [cursor=pointer]:
+                      - generic [ref=e1058]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e1059]:
+                      - button "Like" [ref=e1060]:
+                        - generic [ref=e1061] [cursor=pointer]:
+                          - generic [ref=e1062]: 
+                          - generic [ref=e1064]: Like
+                      - button "Share Алексей Пикалов's review." [ref=e1065]:
+                        - generic [ref=e1066] [cursor=pointer]:
+                          - generic [ref=e1067]: 
+                          - generic [ref=e1068]: Share
+              - generic "Никита Бучковский" [ref=e1072]:
+                - generic [ref=e1074]:
+                  - button "Photo of Никита Бучковский" [ref=e1075]
+                  - generic [ref=e1077]:
+                    - button "Никита Бучковский 3 reviews" [ref=e1079]:
+                      - generic [ref=e1080]: Никита Бучковский
+                      - generic [ref=e1081]: 3 reviews
+                    - button "Actions for Никита Бучковский's review" [ref=e1082] [cursor=pointer]:
+                      - generic [ref=e1084]: 
+                  - generic [ref=e1085]:
+                    - generic [ref=e1086]:
+                      - img "5 stars" [ref=e1087]:
+                        - generic [ref=e1088]: 
+                        - generic [ref=e1089]: 
+                        - generic [ref=e1090]: 
+                        - generic [ref=e1091]: 
+                        - generic [ref=e1092]: 
+                      - generic [ref=e1093]: a month ago
+                    - generic [ref=e1095]: We were satisfied with the cooperation. The work was done qualitatively, with in-depth analysis and real actions for business growth.
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e1097] [cursor=pointer]:
+                      - generic [ref=e1098]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e1099]:
+                      - button "Like" [ref=e1100]:
+                        - generic [ref=e1101] [cursor=pointer]:
+                          - generic [ref=e1102]: 
+                          - generic [ref=e1104]: Like
+                      - button "Share Никита Бучковский's review." [ref=e1105]:
+                        - generic [ref=e1106] [cursor=pointer]:
+                          - generic [ref=e1107]: 
+                          - generic [ref=e1108]: Share
+              - generic "everydayo" [ref=e1112]:
+                - generic [ref=e1114]:
+                  - button "Photo of everydayo" [ref=e1115]
+                  - generic [ref=e1117]:
+                    - button "everydayo 1 review" [ref=e1119]:
+                      - generic [ref=e1120]: everydayo
+                      - generic [ref=e1121]: 1 review
+                    - button "Actions for everydayo's review" [ref=e1122] [cursor=pointer]:
+                      - generic [ref=e1124]: 
+                  - generic [ref=e1125]:
+                    - generic [ref=e1126]:
+                      - img "5 stars" [ref=e1127]:
+                        - generic [ref=e1128]: 
+                        - generic [ref=e1129]: 
+                        - generic [ref=e1130]: 
+                        - generic [ref=e1131]: 
+                        - generic [ref=e1132]: 
+                      - generic [ref=e1133]: a month ago
+                    - generic [ref=e1135]: We work with LedoLab. The team analyzed the business in detail and showed where exactly customers are being lost. Only a positive impression. They helped improve the sales funnel and the quality of applications. We recommend it to those who value results and control.
+                    - switch "Translated by Google ・ See original (Ukrainian)" [checked] [ref=e1137] [cursor=pointer]:
+                      - generic [ref=e1138]: Translated by Google ・
+                      - text: See original (Ukrainian)
+                    - generic [ref=e1139]:
+                      - button "Like" [ref=e1140]:
+                        - generic [ref=e1141] [cursor=pointer]:
+                          - generic [ref=e1142]: 
+                          - generic [ref=e1144]: Like
+                      - button "Share everydayo's review." [ref=e1145]:
+                        - generic [ref=e1146] [cursor=pointer]:
+                          - generic [ref=e1147]: 
+                          - generic [ref=e1148]: Share
+              - generic "Sasha Sasha" [ref=e1152]:
+                - generic [ref=e1154]:
+                  - button "Photo of Sasha Sasha" [ref=e1155]
+                  - generic [ref=e1157]:
+                    - button "Sasha Sasha 1 review" [ref=e1159]:
+                      - generic [ref=e1160]: Sasha Sasha
+                      - generic [ref=e1161]: 1 review
+                    - button "Actions for Sasha Sasha's review" [ref=e1162] [cursor=pointer]:
+                      - generic [ref=e1164]: 
+                  - generic [ref=e1165]:
+                    - generic [ref=e1166]:
+                      - img "5 stars" [ref=e1167]:
+                        - generic [ref=e1168]: 
+                        - generic [ref=e1169]: 
+                        - generic [ref=e1170]: 
+                        - generic [ref=e1171]: 
+                        - generic [ref=e1172]: 
+                      - generic [ref=e1173]: 2 months ago
+                    - generic [ref=e1175]: We contacted Ledolab for an advertising audit and found more problems than we expected. We liked that they showed us everything in numbers and offered a concrete action plan. Without promising mountains of gold.
+                    - switch "Translated by Google ・ See original (Russian)" [checked] [ref=e1177] [cursor=pointer]:
+                      - generic [ref=e1178]: Translated by Google ・
+                      - text: See original (Russian)
+                    - generic [ref=e1179]:
+                      - button "Like" [ref=e1180]:
+                        - generic [ref=e1181] [cursor=pointer]:
+                          - generic [ref=e1182]: 
+                          - generic [ref=e1184]: Like
+                      - button "Share Sasha Sasha's review." [ref=e1185]:
+                        - generic [ref=e1186] [cursor=pointer]:
+                          - generic [ref=e1187]: 
+                          - generic [ref=e1188]: Share
+              - generic "Татьяна Саакян" [ref=e1192]:
+                - generic [ref=e1194]:
+                  - button "Photo of Татьяна Саакян" [ref=e1195]
+                  - generic [ref=e1197]:
+                    - button "Татьяна Саакян 4 reviews · 1 photo" [ref=e1199]:
+                      - generic [ref=e1200]: Татьяна Саакян
+                      - generic [ref=e1201]: 4 reviews · 1 photo
+                    - button "Actions for Татьяна Саакян's review" [ref=e1202] [cursor=pointer]:
+                      - generic [ref=e1204]: 
+                  - generic [ref=e1205]:
+                    - generic [ref=e1206]:
+                      - img "5 stars" [ref=e1207]:
+                        - generic [ref=e1208]: 
+                        - generic [ref=e1209]: 
+                        - generic [ref=e1210]: 
+                        - generic [ref=e1211]: 
+                        - generic [ref=e1212]: 
+                      - generic [ref=e1213]: a month ago
+                    - generic [ref=e1215]: A great collaboration experience. The team helped me systematize my marketing, streamline my analytics, and build a clear customer acquisition model. I recommend them to businesses looking for growth.
+                    - switch "Translated by Google ・ See original (Russian)" [checked] [ref=e1217] [cursor=pointer]:
+                      - generic [ref=e1218]: Translated by Google ・
+                      - text: See original (Russian)
+                    - generic [ref=e1219]:
+                      - button "Like" [ref=e1220]:
+                        - generic [ref=e1221] [cursor=pointer]:
+                          - generic [ref=e1222]: 
+                          - generic [ref=e1224]: Like
+                      - button "Share Татьяна Саакян's review." [ref=e1225]:
+                        - generic [ref=e1226] [cursor=pointer]:
+                          - generic [ref=e1227]: 
+                          - generic [ref=e1228]: Share
+      - button "Collapse side panel" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: 
+    - generic [ref=e186]:
+      - button "Google apps" [ref=e190] [cursor=pointer]:
+        - img [ref=e191]
+      - link "Sign in" [ref=e194] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FLedoLab%2B%25E2%2580%2594%2BMarketing%2B%2526%2BDigital%2BAgency%2F%4042.5624315%2C27.5295119%2C17z%2Fdata%3D!4m8!3m7!1s0x40a6979fab7c31cf%3A0xfb1b9a4353e23e86!8m2!3d42.5624315!4d27.5320868!9m1!1b1!16s%252Fg%252F11ywq9k_c1%3Fg_ep%3DEgoyMDI2MDQwMS4wIMCaEyoASAFQAw%253D%253D&service=local&ec=GAZAcQ
+    - generic:
+      - generic:
+        - button "Show Your Location" [ref=e197] [cursor=pointer]:
+          - generic [ref=e199]: 
+        - generic [ref=e201] [cursor=pointer]:
+          - button "Zoom in" [ref=e202]
+          - button "Zoom out" [ref=e205]
+      - button "Browse Street View images" [ref=e213]
+      - generic [ref=e215]:
+        - generic "Interactive map" [ref=e216]
+        - generic [ref=e220] [cursor=pointer]:
+          - generic [ref=e221]: 
+          - generic [ref=e222]: Layers
+        - button "Layers" [ref=e223] [cursor=pointer]
+    - generic [ref=e225]:
+      - contentinfo [ref=e228]:
+        - text: Imagery ©2026 , Map data ©2026
+        - button "Bulgaria" [ref=e229] [cursor=pointer]
+        - button "Terms" [ref=e230] [cursor=pointer]
+        - button "Privacy" [ref=e231] [cursor=pointer]
+        - button "Send Product Feedback" [ref=e232] [cursor=pointer]
+      - button "100 m" [ref=e708] [cursor=pointer]: 100 m

@@ -26,7 +26,7 @@ export const en: Translations = {
   },
   services: {
     tag: "Pricing",
-    title: "Turnkey marketing —",
+    title: "Turnkey marketing -",
     titleAccent: "choose your plan",
     subtitle: "From first sale to scaling. Every plan includes a personalized strategy and monthly reports with real numbers.",
     popular: "Popular",
@@ -53,7 +53,7 @@ export const en: Translations = {
   },
   about: {
     tag: "About the Founder",
-    title: "Denis Ledovskoy —",
+    title: "Denis Ledovskoy -",
     titleAccent: "founder",
     bio: "Marketing specialist with 10+ years of experience across Europe, USA, and CIS. Specializes in building systematic marketing, performance advertising, and scaling eCommerce projects. Over $1,500,000 invested in advertising in 2024.",
     highlights: [
