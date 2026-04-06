@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Override slick font to swap display */
+@font-face {
+  font-family: 'slick';
+  font-display: swap;
+  src: url('/fonts/slick.woff') format('woff');
+}
+
 :root {
   --bg: #FAFAF7;
   --bg-alt: #F2F0EC;

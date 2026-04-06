@@ -144,7 +144,7 @@ export default function CaseStudies() {
               <div key={cs.id} className="h-full">
                 <div className="group h-full rounded-[20px] border border-border bg-surface overflow-hidden transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:border-accent/20 flex flex-col">
                   {/* Banner with image or gradient */}
-                  <div className={`relative bg-gradient-to-br ${cs.gradient} h-36 flex items-end p-5 shrink-0 overflow-hidden`}>
+                  <div className={`relative bg-gradient-to-br ${cs.gradient} h-28 sm:h-36 flex items-end p-4 sm:p-5 shrink-0 overflow-hidden`}>
                     {cs.heroImage && (
                       <Image
                         src={cs.heroImage}
@@ -205,14 +205,14 @@ export default function CaseStudies() {
           {/* Arrows on sides */}
           <button
             onClick={() => sliderRef.current?.slickPrev()}
-            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md flex items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
+            className="absolute -left-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
             aria-label="Previous"
           >
             <ChevronLeft size={18} />
           </button>
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md flex items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
+            className="absolute -right-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
             aria-label="Next"
           >
             <ChevronRight size={18} />

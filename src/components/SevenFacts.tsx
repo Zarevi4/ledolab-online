@@ -106,11 +106,11 @@ export default function SevenFacts() {
                     </div>
                   </div>
                   {/* Text */}
-                  <div className="p-5 flex flex-col flex-1">
-                    <h3 className="font-heading text-[16px] font-semibold text-ink mb-2 group-hover:text-accent transition-colors">
+                  <div className="p-4 sm:p-5 flex flex-col flex-1">
+                    <h3 className="font-heading text-[15px] sm:text-[16px] font-semibold text-ink mb-2 group-hover:text-accent transition-colors">
                       {t(fact).title}
                     </h3>
-                    <p className="text-[13px] text-ink-light leading-relaxed flex-1">
+                    <p className="text-[13px] sm:text-[13px] text-ink-light leading-relaxed flex-1 line-clamp-4 sm:line-clamp-none">
                       {t(fact).text}
                     </p>
                   </div>

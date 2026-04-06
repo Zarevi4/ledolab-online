@@ -5,15 +5,16 @@ import "./globals.css";
 
 const sora = Sora({
   variable: "--font-sora",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["500", "600", "700"],
 });
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -261,8 +262,6 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${sora.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://static.tildacdn.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)" />

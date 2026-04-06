@@ -100,7 +100,7 @@ export default function Testimonials() {
                   ))}
                 </div>
                 {/* Review text */}
-                <p className="text-[14px] text-ink-light leading-relaxed flex-1">
+                <p className="text-[13px] sm:text-[14px] text-ink-light leading-relaxed flex-1 line-clamp-6 sm:line-clamp-none">
                   {r.text}
                 </p>
                 {/* Author */}
