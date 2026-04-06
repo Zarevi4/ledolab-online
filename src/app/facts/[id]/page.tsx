@@ -10,7 +10,7 @@ export function generateMetadata({ params }: { params: Promise<{ id: string }> }
   return params.then(({ id }) => {
     const f = facts.find((x) => x.id === id);
     if (!f) return { title: "Not found" };
-    return { title: `${f.titleRu} - LedoLab`, description: f.textRu };
+    return { title: `${f.titles.ru} - LedoLab`, description: f.texts.ru };
   });
 }
 
