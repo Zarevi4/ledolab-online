@@ -36,7 +36,7 @@ export default function AboutOwner() {
           {/* Photo */}
           <div className="relative rounded-2xl overflow-hidden border border-border bg-surface aspect-[3/4] md:aspect-auto">
             <Image
-              src="/images/homepage/about.jpg"
+              src="/images/homepage/owner-full.jpg"
               alt="Денис Ледовской"
               fill
               className="object-cover"
