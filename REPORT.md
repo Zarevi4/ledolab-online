@@ -2,7 +2,6 @@
 
 ## Ссылки
 - **Основной сайт:** https://ledolabonline.vercel.app
-- **GitHub:** https://github.com/Zarevi4/ledolab-online
 - **Промо (FB/TT):** https://ledolabonline.vercel.app/promo
 - **Промо E-Commerce:** https://ledolabonline.vercel.app/promo/ecommerce
 
