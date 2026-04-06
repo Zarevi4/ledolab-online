@@ -138,10 +138,10 @@ export default function CaseStudies() {
           }
         `}</style>
 
-        <Slider ref={sliderRef} {...settings} className="cases-slider">
-          {caseStudies.map((cs) => (
-            <div key={cs.id} className="h-full">
-              <Link href={`/cases/${cs.id}`} className="block h-full">
+        <div className="relative">
+          <Slider ref={sliderRef} {...settings} className="cases-slider">
+            {caseStudies.map((cs) => (
+              <div key={cs.id} className="h-full">
                 <div className="group h-full rounded-[20px] border border-border bg-surface overflow-hidden transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:border-accent/20 flex flex-col">
                   {/* Banner with image or gradient */}
                   <div className={`relative bg-gradient-to-br ${cs.gradient} h-36 flex items-end p-5 shrink-0 overflow-hidden`}>
@@ -150,20 +150,17 @@ export default function CaseStudies() {
                         src={cs.heroImage}
                         alt={cs.title}
                         fill
-                        className="object-cover opacity-30 blur-[2px] group-hover:opacity-50 group-hover:blur-0 transition-all duration-500"
+                        className="object-cover blur-[1px] group-hover:blur-0 transition-all duration-500"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     )}
                     <span className={`relative z-10 text-[11px] font-semibold tracking-[0.08em] uppercase px-3 py-[5px] rounded-full ${cs.badge}`}>
                       {cs.category}
                     </span>
-                    <div className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-y-1 group-hover:translate-y-0 transition-all duration-300">
-                      <ArrowUpRight size={15} className="text-ink" />
-                    </div>
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="font-heading text-[17px] font-semibold text-ink group-hover:text-accent transition-colors leading-snug">
+                    <h3 className="font-heading text-[17px] font-semibold text-ink leading-snug">
                       {cs.title}
                     </h3>
                     <p className="mt-2 text-[13px] text-ink-light leading-relaxed line-clamp-2 min-h-[2.6rem]">
@@ -191,12 +188,37 @@ export default function CaseStudies() {
                         </span>
                       ))}
                     </div>
+
+                    {/* CTA button */}
+                    <Link
+                      href={`/cases/${cs.id}`}
+                      className="mt-4 pt-3 border-t border-border flex items-center gap-1.5 text-[13px] font-semibold text-accent hover:gap-2.5 transition-all"
+                    >
+                      {t.casePage?.go || "Подробнее"}
+                      <ArrowUpRight size={14} />
+                    </Link>
                   </div>
                 </div>
-              </Link>
-            </div>
-          ))}
-        </Slider>
+              </div>
+            ))}
+          </Slider>
+
+          {/* Arrows on sides */}
+          <button
+            onClick={() => sliderRef.current?.slickPrev()}
+            className="absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md flex items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
+            aria-label="Previous"
+          >
+            <ChevronLeft size={18} />
+          </button>
+          <button
+            onClick={() => sliderRef.current?.slickNext()}
+            className="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full border border-border bg-surface shadow-md flex items-center justify-center text-ink-light hover:text-ink hover:border-accent/30 transition-all z-10 hidden lg:flex"
+            aria-label="Next"
+          >
+            <ChevronRight size={18} />
+          </button>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}

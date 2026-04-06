@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Award, Globe, TrendingUp, Users } from "lucide-react";
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n/context";
 import type { ReactNode } from "react";
 
@@ -24,12 +25,31 @@ export default function AboutOwner() {
   return (
     <section id="about" className="py-28 sm:py-36 px-6 lg:px-8 bg-bg-alt">
       <div className="max-w-[1200px] mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-[640px] mb-14">
-          <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.about.tag}</span>
-          <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
-            {t.about.title} <span className="gradient-text">{t.about.titleAccent}</span> LedoLab Digital
-          </h2>
-          <p className="mt-4 text-[16px] text-ink-light leading-relaxed">{t.about.bio}</p>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex flex-col md:flex-row gap-8 items-start mb-14">
+          <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border border-border bg-surface shrink-0">
+            <Image src="/images/homepage/about.jpg" alt="Денис Ледовской" width={128} height={128} className="w-full h-full object-cover" />
+          </div>
+          <div className="max-w-[560px]">
+            <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.about.tag}</span>
+            <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
+              {t.about.title} <span className="gradient-text">{t.about.titleAccent}</span> LedoLab Digital
+            </h2>
+            <p className="mt-4 text-[16px] text-ink-light leading-relaxed">{t.about.bio}</p>
+
+            {/* Google Reviews badge */}
+            <div className="mt-4 inline-flex items-center gap-3 rounded-xl border border-border bg-surface px-4 py-2.5">
+              <div className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-accent-warm fill-accent-warm" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                ))}
+              </div>
+              <div className="text-[12px]">
+                <span className="font-bold text-ink">5.0</span>
+                <span className="text-ink-faint"> / 5 — </span>
+                <span className="text-ink-light">56 reviews on Google</span>
+              </div>
+            </div>
+          </div>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {t.about.highlights.map((h, i) => (
