@@ -9,9 +9,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { caseStudies } from "@/lib/data";
+import { useI18n } from "@/lib/i18n/context";
 
 export default function CaseStudies() {
   const sliderRef = useRef<Slider>(null);
+  const { t } = useI18n();
 
   const settings = {
     dots: true,
@@ -51,13 +53,13 @@ export default function CaseStudies() {
         >
           <div>
             <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">
-              Кейсы
+              {t.cases.tag}
             </span>
             <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
-              Кейсы наших <span className="gradient-text">клиентов</span>
+              {t.cases.title} <span className="gradient-text">{t.cases.titleAccent}</span>
             </h2>
             <p className="mt-2 text-[15px] text-ink-light">
-              Реальные результаты. Каждый кейс — решение конкретной задачи с прозрачными цифрами.
+              {t.cases.subtitle}
             </p>
           </div>
 
@@ -148,7 +150,7 @@ export default function CaseStudies() {
                         src={cs.heroImage}
                         alt={cs.title}
                         fill
-                        className="object-cover opacity-30"
+                        className="object-cover opacity-30 blur-[2px] group-hover:opacity-50 group-hover:blur-0 transition-all duration-500"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     )}
@@ -207,7 +209,7 @@ export default function CaseStudies() {
             href="#contact"
             className="gradient-bg text-white font-semibold text-[14px] px-7 py-[13px] rounded-full hover:opacity-90 transition-opacity inline-block"
           >
-            Оставить заявку
+            {t.cases.cta}
           </a>
         </motion.div>
       </div>

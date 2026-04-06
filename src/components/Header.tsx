@@ -4,18 +4,21 @@ import { motion } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
-
-const links = [
-  { href: "#services", label: "Услуги" },
-  { href: "#cases", label: "Кейсы" },
-  { href: "#reviews", label: "Отзывы" },
-  { href: "#about", label: "О нас" },
-  { href: "#contact", label: "Контакты" },
-];
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useI18n } from "@/lib/i18n/context";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useI18n();
+
+  const links = [
+    { href: "#services", label: t.nav.services },
+    { href: "#cases", label: t.nav.cases },
+    { href: "#reviews", label: t.nav.reviews },
+    { href: "#about", label: t.nav.about },
+    { href: "#contact", label: t.nav.contact },
+  ];
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 30);
@@ -52,6 +55,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
+          <LanguageSwitcher />
           <ThemeToggle />
           <a
             href="tel:+380638619285"
@@ -64,16 +68,17 @@ export default function Header() {
             href="#contact"
             className="gradient-bg text-white text-[13px] font-semibold px-5 py-[9px] rounded-full hover:opacity-90 transition-opacity"
           >
-            Оставить заявку
+            {t.nav.cta}
           </a>
         </div>
 
         <div className="flex items-center gap-3 lg:hidden">
+          <LanguageSwitcher />
           <ThemeToggle />
           <button
             className="text-ink-light"
             onClick={() => setOpen(!open)}
-            aria-label="Меню"
+            aria-label="Menu"
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -97,17 +102,11 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="tel:+380638619285"
-            className="block py-3 text-[15px] text-ink-light hover:text-ink transition-colors"
-          >
-            +38063 861 92 85
-          </a>
-          <a
             href="#contact"
             onClick={() => setOpen(false)}
             className="block mt-2 text-center gradient-bg text-white text-[14px] font-semibold px-5 py-3 rounded-full"
           >
-            Оставить заявку
+            {t.nav.cta}
           </a>
         </motion.div>
       )}

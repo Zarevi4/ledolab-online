@@ -72,7 +72,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
 
       {/* Hero image */}
       {cs.heroImage && (
-        <div className="px-6 lg:px-8 -mt-6">
+        <div className="px-6 lg:px-8 mt-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
