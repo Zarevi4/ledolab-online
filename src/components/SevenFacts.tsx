@@ -96,10 +96,6 @@ export default function SevenFacts() {
                       className="object-cover scale-100 group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
-                    {/* Watermark */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <span className="font-heading text-[28px] font-bold select-none tracking-wide rotate-[-15deg] text-white/20">LedoLab</span>
-                    </div>
                     {/* Number badge */}
                     <div className="absolute top-3 left-3 w-8 h-8 rounded-lg gradient-bg text-white flex items-center justify-center text-[13px] font-bold">
                       {fact.num}
