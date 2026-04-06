@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, Target, Lightbulb, Trophy, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Target, Lightbulb, Trophy, Check } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import type { CaseStudy } from "@/lib/data";
@@ -22,7 +23,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
+      {/* Header with hero image */}
       <div className={`relative bg-gradient-to-br ${cs.gradient} py-20 sm:py-28 px-6 lg:px-8`}>
         <div className="max-w-[900px] mx-auto">
           <motion.div {...fade(0.1)}>
@@ -69,8 +70,29 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
         </div>
       </div>
 
+      {/* Hero image */}
+      {cs.heroImage && (
+        <div className="px-6 lg:px-8 -mt-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4, ease }}
+            className="max-w-[900px] mx-auto rounded-[16px] border border-border overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.08)]"
+          >
+            <Image
+              src={cs.heroImage}
+              alt={cs.title}
+              width={900}
+              height={500}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </motion.div>
+        </div>
+      )}
+
       {/* Metrics bar */}
-      <div className="px-6 lg:px-8 -mt-8">
+      <div className="px-6 lg:px-8 mt-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -136,6 +158,35 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
           </ul>
         </motion.div>
 
+        {/* Screenshots gallery */}
+        {cs.images && cs.images.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
+          >
+            <h2 className="font-heading text-[22px] font-bold text-ink mb-6">Скриншоты</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {cs.images.map((img, i) => (
+                <div
+                  key={i}
+                  className="rounded-[12px] border border-border overflow-hidden bg-surface"
+                >
+                  <Image
+                    src={img}
+                    alt={`${cs.title} — скриншот ${i + 1}`}
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         {/* Results */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -198,17 +249,21 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {related.map((rc) => (
-                <Link key={rc.id} href={`/cases/${rc.id}`}>
-                  <div className="group rounded-[16px] border border-border bg-surface p-5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.05)] hover:border-accent/20 transition-all duration-500">
-                    <span className={`inline-block text-[10px] font-semibold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${rc.badge} mb-3`}>
+                <Link key={rc.id} href={`/cases/${rc.id}`} className="block h-full">
+                  <div className="group h-full rounded-[16px] border border-border bg-surface p-5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.05)] hover:border-accent/20 transition-all duration-500 flex flex-col">
+                    <span className={`inline-block text-[10px] font-semibold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${rc.badge} mb-3 self-start`}>
                       {rc.category}
                     </span>
                     <h4 className="font-heading text-[15px] font-semibold text-ink group-hover:text-accent transition-colors">
                       {rc.title}
                     </h4>
-                    <p className="mt-1.5 text-[12px] text-ink-light line-clamp-2">
+                    <p className="mt-1.5 text-[12px] text-ink-light line-clamp-2 flex-1">
                       {rc.subtitle}
                     </p>
+                    <div className="mt-4 pt-3 border-t border-border flex items-center gap-1.5 text-[12px] font-semibold text-accent group-hover:gap-2.5 transition-all">
+                      Перейти
+                      <ArrowRight size={13} />
+                    </div>
                   </div>
                 </Link>
               ))}

@@ -10,6 +10,8 @@ export interface CaseStudy {
   results: string[];
   gradient: string;
   badge: string;
+  heroImage?: string;
+  images?: string[];
 }
 
 export interface ServicePlan {
@@ -192,6 +194,15 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-amber-200/70 via-orange-100/50 to-yellow-50/30",
     badge: "bg-amber-100 text-amber-800",
+    heroImage: "/images/cases/case-auto-romania.jpg",
+    images: [
+      "/images/cases/case-auto-romania-2.png",
+      "/images/cases/case-auto-romania-3.jpg",
+      "/images/cases/case-auto-romania-4.jpg",
+      "/images/cases/case-auto-romania-5.jpg",
+      "/images/cases/case-auto-romania-6.jpg",
+      "/images/cases/case-auto-romania-7.jpg",
+    ],
   },
   {
     id: "ecommerce-0-to-118k",
@@ -220,6 +231,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-emerald-200/70 via-green-100/50 to-teal-50/30",
     badge: "bg-emerald-100 text-emerald-800",
+    heroImage: "/images/cases/case-ecommerce-118k.png",
   },
   {
     id: "auto-literature-969-roas",
@@ -248,6 +260,15 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-blue-200/70 via-indigo-100/50 to-violet-50/30",
     badge: "bg-blue-100 text-blue-800",
+    heroImage: "/images/cases/case-969roas-1.png",
+    images: [
+      "/images/cases/case-969roas-2.png",
+      "/images/cases/case-969roas-3.png",
+      "/images/cases/case-969roas-4.png",
+      "/images/cases/case-969roas-5.png",
+      "/images/cases/case-969roas-6.png",
+      "/images/cases/case-969roas-7.png",
+    ],
   },
   {
     id: "saas-14-markets",
@@ -276,6 +297,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-teal-200/70 via-cyan-100/50 to-sky-50/30",
     badge: "bg-teal-100 text-teal-800",
+    heroImage: "/images/cases/case-saas-14.jpg",
   },
   {
     id: "pet-products-uk",
@@ -304,6 +326,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-sky-200/70 via-blue-100/50 to-indigo-50/30",
     badge: "bg-sky-100 text-sky-800",
+    heroImage: "/images/cases/case-pet-uk.jpg",
   },
   {
     id: "household-0-to-100k",
@@ -332,6 +355,13 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-rose-200/70 via-pink-100/50 to-fuchsia-50/30",
     badge: "bg-rose-100 text-rose-800",
+    heroImage: "/images/cases/case-household.jpg",
+    images: [
+      "/images/cases/case-household-2.png",
+      "/images/cases/case-household-3.png",
+      "/images/cases/case-household-4.png",
+      "/images/cases/case-household-5.png",
+    ],
   },
   {
     id: "cosmetics-5x-conversion",
@@ -360,6 +390,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-fuchsia-200/70 via-purple-100/50 to-violet-50/30",
     badge: "bg-fuchsia-100 text-fuchsia-800",
+    heroImage: "/images/cases/case-cosmetics.jpg",
   },
   {
     id: "car-rental-app",
@@ -388,6 +419,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-violet-200/70 via-indigo-100/50 to-blue-50/30",
     badge: "bg-violet-100 text-violet-800",
+    heroImage: "/images/cases/case-car-rental.jpg",
   },
   {
     id: "lamel-international",
@@ -416,6 +448,12 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-pink-200/70 via-rose-100/50 to-red-50/30",
     badge: "bg-pink-100 text-pink-800",
+    heroImage: "/images/cases/case-lamel.jpg",
+    images: [
+      "/images/cases/case-lamel-2.jpg",
+      "/images/cases/case-lamel-3.png",
+      "/images/cases/case-lamel-4.png",
+    ],
   },
   {
     id: "kasta-black-friday",
@@ -444,5 +482,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     gradient: "from-orange-200/70 via-amber-100/50 to-yellow-50/30",
     badge: "bg-orange-100 text-orange-800",
+    heroImage: "/images/cases/case-kasta.png",
+    images: ["/images/cases/case-kasta-2.png"],
   },
 ];

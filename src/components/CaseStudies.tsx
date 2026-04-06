@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import Slider from "react-slick";
@@ -140,12 +141,21 @@ export default function CaseStudies() {
             <div key={cs.id} className="h-full">
               <Link href={`/cases/${cs.id}`} className="block h-full">
                 <div className="group h-full rounded-[20px] border border-border bg-surface overflow-hidden transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:border-accent/20 flex flex-col">
-                  {/* Gradient banner */}
-                  <div className={`relative bg-gradient-to-br ${cs.gradient} h-32 flex items-end p-5 shrink-0`}>
-                    <span className={`text-[11px] font-semibold tracking-[0.08em] uppercase px-3 py-[5px] rounded-full ${cs.badge}`}>
+                  {/* Banner with image or gradient */}
+                  <div className={`relative bg-gradient-to-br ${cs.gradient} h-36 flex items-end p-5 shrink-0 overflow-hidden`}>
+                    {cs.heroImage && (
+                      <Image
+                        src={cs.heroImage}
+                        alt={cs.title}
+                        fill
+                        className="object-cover opacity-30"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    )}
+                    <span className={`relative z-10 text-[11px] font-semibold tracking-[0.08em] uppercase px-3 py-[5px] rounded-full ${cs.badge}`}>
                       {cs.category}
                     </span>
-                    <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/60 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                    <div className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/60 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-y-1 group-hover:translate-y-0 transition-all duration-300">
                       <ArrowUpRight size={15} className="text-ink" />
                     </div>
                   </div>
