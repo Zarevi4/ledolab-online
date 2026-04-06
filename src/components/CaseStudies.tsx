@@ -150,7 +150,7 @@ export default function CaseStudies() {
                         src={cs.heroImage}
                         alt={cs.title}
                         fill
-                        className="object-cover blur-[1px] group-hover:blur-0 transition-all duration-500"
+                        className="object-cover scale-100 group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     )}
@@ -160,9 +160,9 @@ export default function CaseStudies() {
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="font-heading text-[17px] font-semibold text-ink leading-snug">
+                    <Link href={`/cases/${cs.id}`} className="font-heading text-[17px] font-semibold text-ink leading-snug hover:text-accent transition-colors">
                       {cs.title}
-                    </h3>
+                    </Link>
                     <p className="mt-2 text-[13px] text-ink-light leading-relaxed line-clamp-2 min-h-[2.6rem]">
                       {cs.subtitle}
                     </p>

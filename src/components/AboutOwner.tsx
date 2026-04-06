@@ -45,7 +45,7 @@ export default function AboutOwner() {
               </div>
               <div className="text-[12px]">
                 <span className="font-bold text-ink">5.0</span>
-                <span className="text-ink-faint"> / 5 — </span>
+                <span className="text-ink-faint"> / 5 – </span>
                 <span className="text-ink-light">56 reviews on Google</span>
               </div>
             </div>

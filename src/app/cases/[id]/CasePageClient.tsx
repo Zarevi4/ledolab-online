@@ -176,7 +176,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
                 >
                   <Image
                     src={img}
-                    alt={`${cs.title} — скриншот ${i + 1}`}
+                    alt={`${cs.title} – скриншот ${i + 1}`}
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover"
@@ -223,7 +223,7 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             Хотите такие же <span className="gradient-text">результаты</span>?
           </h3>
           <p className="text-[15px] text-ink-light mb-6 max-w-[420px] mx-auto">
-            Оставьте заявку — мы проведём бесплатную консультацию и составим план роста для вашего бизнеса.
+            Оставьте заявку – мы проведём бесплатную консультацию и составим план роста для вашего бизнеса.
           </p>
           <button
             onClick={() => setModalOpen(true)}

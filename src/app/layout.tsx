@@ -18,11 +18,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "LedoLab — Marketing & Digital Agency | Маркетинг под ключ",
-    template: "%s — LedoLab",
+    default: "LedoLab – Marketing & Digital Agency | Маркетинг под ключ",
+    template: "%s – LedoLab",
   },
   description:
-    "Системно выводим бизнесы на рынок под ключ — от первой продажи до $100 000. Получите 50+ лидов за 30 дней. Performance-маркетинг, таргет, Google Ads, SEO.",
+    "Системно выводим бизнесы на рынок под ключ – от первой продажи до $100 000. Получите 50+ лидов за 30 дней. Performance-маркетинг, таргет, Google Ads, SEO.",
   keywords: [
     "маркетинг под ключ",
     "digital агентство",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "LedoLab — Marketing & Digital Agency",
+    title: "LedoLab – Marketing & Digital Agency",
     description:
-      "Получите первые 50+ лидов за 30 дней — без угадываний и пустых трат. Окупаемый маркетинг от команды с 10+ годами опыта.",
+      "Получите первые 50+ лидов за 30 дней – без угадываний и пустых трат. Окупаемый маркетинг от команды с 10+ годами опыта.",
     url: "https://ledolab.online",
     siteName: "LedoLab",
     locale: "ru_RU",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LedoLab — Marketing & Digital Agency",
+    title: "LedoLab – Marketing & Digital Agency",
     description:
       "Системно выводим бизнесы от 0 до $100 000. Performance-маркетинг, таргет, Google Ads.",
   },
@@ -115,11 +115,11 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://ledolab.online/#webpage",
       url: "https://ledolab.online",
-      name: "LedoLab — Marketing & Digital Agency",
+      name: "LedoLab – Marketing & Digital Agency",
       isPartOf: { "@id": "https://ledolab.online/#website" },
       about: { "@id": "https://ledolab.online/#organization" },
       description:
-        "Системно выводим бизнесы на рынок под ключ — от первой продажи до $100 000.",
+        "Системно выводим бизнесы на рынок под ключ – от первой продажи до $100 000.",
       inLanguage: "ru",
     },
     {
@@ -200,7 +200,7 @@ const jsonLd = {
           name: "Можно ли начать работать только с одной услугой?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Да, конечно. Вы можете выбрать любую услугу — SEO, таргет, Google Ads, SMM, создание сайта или подключение CRM. Но максимальный результат даёт комплексный подход.",
+            text: "Да, конечно. Вы можете выбрать любую услугу – SEO, таргет, Google Ads, SMM, создание сайта или подключение CRM. Но максимальный результат даёт комплексный подход.",
           },
         },
         {

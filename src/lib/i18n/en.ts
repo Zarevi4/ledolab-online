@@ -2,7 +2,7 @@ import type { Translations } from "./types";
 
 export const en: Translations = {
   meta: {
-    title: "LedoLab — Marketing & Digital Agency | Turnkey Marketing",
+    title: "LedoLab –Marketing & Digital Agency | Turnkey Marketing",
     description: "We systematically launch businesses from scratch to $100,000. Get 50+ leads in 30 days. Performance marketing, targeting, Google Ads, SEO.",
   },
   nav: {
@@ -17,7 +17,7 @@ export const en: Translations = {
     tag: "Marketing & Digital Agency",
     title: "We systematically grow businesses from 0 to",
     titleAccent: "$100,000",
-    subtitle: "Get your first 50+ leads in 30 days — no guesswork, no wasted spend. Profitable marketing: not an expense, but a scaling point. You get a team of professionals for the price of one specialist.",
+    subtitle: "Get your first 50+ leads in 30 days –no guesswork, no wasted spend. Profitable marketing: not an expense, but a scaling point. You get a team of professionals for the price of one specialist.",
     promoPrice: "\u20ac19.99",
     promoOld: "\u20ac100",
     promoDesc: "Full marketing audit + step-by-step growth plan",
@@ -60,7 +60,7 @@ export const en: Translations = {
       { title: "Performance Marketing", desc: "Specialization in performance advertising and scaling eCommerce projects with transparent KPIs." },
       { title: "International Experience", desc: "Practice in Europe, USA, and CIS. Working with businesses worldwide across different markets." },
       { title: "Systematic Marketing", desc: "Building systematic marketing: from strategy and audit to launch and scaling." },
-      { title: "Turnkey Team", desc: "You get a team of professionals — from targeting specialist to analyst — for the price of one specialist." },
+      { title: "Turnkey Team", desc: "You get a team of professionals –from targeting specialist to analyst –for the price of one specialist." },
     ],
   },
   process: {
@@ -88,7 +88,7 @@ export const en: Translations = {
     titleAccent: "questions",
     items: [
       { question: "What does the audit include?", answer: "The audit includes analysis of the website, advertising campaigns, social media, sales funnel, and competitive environment. You receive a PDF report + personalized marketing plan with step-by-step recommendations." },
-      { question: "Can I start with just one service?", answer: "Yes, of course. You can choose any service — SEO, targeting, Google Ads, SMM, website creation, or CRM integration. But the maximum result comes from a comprehensive approach." },
+      { question: "Can I start with just one service?", answer: "Yes, of course. You can choose any service –SEO, targeting, Google Ads, SMM, website creation, or CRM integration. But the maximum result comes from a comprehensive approach." },
       { question: "Do you guarantee results?", answer: "We work based on transparent KPIs: cost per lead, number of applications, traffic growth, conversions. We form forecasts, set goals, and show real numbers monthly." },
     ],
     cta: "Get Started",
@@ -97,7 +97,7 @@ export const en: Translations = {
     tag: "Contact",
     title: "Ready to",
     titleAccent: "grow",
-    subtitle: "Leave a request — we'll contact you within 24 hours.",
+    subtitle: "Leave a request –we'll contact you within 24 hours.",
     name: "Name",
     email: "Email",
     service: "What are you interested in?",
@@ -117,7 +117,7 @@ export const en: Translations = {
     results: "Results",
     screenshots: "Screenshots",
     ctaTitle: "Want the same",
-    ctaSubtitle: "Leave a request — we'll provide a free consultation and create a growth plan for your business.",
+    ctaSubtitle: "Leave a request –we'll provide a free consultation and create a growth plan for your business.",
     cta: "Get Started",
     related: "Related Cases",
     go: "View",

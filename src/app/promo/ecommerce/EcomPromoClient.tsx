@@ -39,7 +39,7 @@ export default function EcomPromo() {
           </h1>
 
           <p className="mt-4 text-[15px] text-ink-light leading-relaxed">
-            Запускаем e-commerce с нуля и масштабируем до $5K/день. Facebook, TikTok, Google Ads — подберём идеальный канал для вашего продукта.
+            Запускаем e-commerce с нуля и масштабируем до $5K/день. Facebook, TikTok, Google Ads – подберём идеальный канал для вашего продукта.
           </p>
 
           {/* Metrics highlight */}
@@ -144,7 +144,7 @@ export default function EcomPromo() {
       <section id="ecom-form" className="px-5 py-12">
         <motion.div {...fade(0)} className="text-center mb-6">
           <h2 className="font-heading text-[22px] font-bold text-ink">Запустите <span className="gradient-text">e-commerce</span></h2>
-          <p className="mt-2 text-[14px] text-ink-light">Расскажите о продукте — мы подберём стратегию</p>
+          <p className="mt-2 text-[14px] text-ink-light">Расскажите о продукте – мы подберём стратегию</p>
         </motion.div>
 
         {submitted ? (

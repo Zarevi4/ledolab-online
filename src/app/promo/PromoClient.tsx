@@ -21,7 +21,7 @@ export default function PromoPage() {
 
   return (
     <div className="min-h-screen bg-bg max-w-[480px] mx-auto overflow-hidden">
-      {/* Hero — full mobile screen */}
+      {/* Hero – full mobile screen */}
       <section className="relative min-h-[100svh] flex flex-col justify-center px-5 py-12">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-[-20%] right-[-30%] w-[400px] h-[400px] rounded-full bg-accent/[0.06] blur-[80px]" />
@@ -39,7 +39,7 @@ export default function PromoPage() {
           </h1>
 
           <p className="mt-4 text-[16px] text-ink-light leading-relaxed">
-            Системный маркетинг под ключ. Не расход — а точка масштабирования вашего бизнеса.
+            Системный маркетинг под ключ. Не расход – а точка масштабирования вашего бизнеса.
           </p>
 
           {/* Price card */}
@@ -82,7 +82,7 @@ export default function PromoPage() {
         </motion.div>
       </section>
 
-      {/* Social proof — stats */}
+      {/* Social proof – stats */}
       <section className="px-5 py-10 bg-bg-alt">
         <motion.div {...fade(0)} className="grid grid-cols-2 gap-3">
           {[
@@ -149,7 +149,7 @@ export default function PromoPage() {
         <div className="space-y-3">
           {[
             { name: "Алексей К.", text: "За 3 месяца увеличили лидов в 4 раза. Системно и прозрачно." },
-            { name: "Мария С.", text: "Начали с аудита за 19.99€ — уже увидели, где теряли деньги." },
+            { name: "Мария С.", text: "Начали с аудита за 19.99€ – уже увидели, где теряли деньги." },
             { name: "Дмитрий Л.", text: "Стоимость клиента снизилась на 40%. Рекомендую." },
           ].map((r, i) => (
             <motion.div key={i} {...fade(i * 0.05)} className="p-4 rounded-2xl border border-border bg-surface">
@@ -172,7 +172,7 @@ export default function PromoPage() {
             Начните <span className="gradient-text">рост</span> сейчас
           </h2>
           <p className="text-[14px] text-ink-light text-center mb-6">
-            Заполните форму — мы свяжемся в течение 24 часов
+            Заполните форму – мы свяжемся в течение 24 часов
           </p>
         </motion.div>
 
@@ -237,7 +237,7 @@ export default function PromoPage() {
           className="w-full gradient-bg text-white text-[14px] font-bold py-3.5 rounded-2xl flex items-center justify-center gap-2"
         >
           <MessageCircle size={16} />
-          Оставить заявку — 19.99€
+          Оставить заявку – 19.99€
         </a>
       </div>
 

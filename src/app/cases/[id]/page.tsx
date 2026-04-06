@@ -11,7 +11,7 @@ export function generateMetadata({ params }: { params: Promise<{ id: string }> }
     const cs = caseStudies.find((c) => c.id === id);
     if (!cs) return { title: "Кейс не найден" };
     return {
-      title: `${cs.title} — LedoLab`,
+      title: `${cs.title} – LedoLab`,
       description: cs.subtitle,
     };
   });
