@@ -28,10 +28,10 @@ export default function Header() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "bg-bg/80 backdrop-blur-2xl border-b border-border/60 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
-          : ""
+          ? "bg-bg/80 backdrop-blur-2xl border-border/60 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+          : "border-transparent"
       }`}
     >
       <nav className="max-w-[1200px] mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
