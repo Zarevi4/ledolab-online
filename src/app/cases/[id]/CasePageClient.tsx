@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Target, Lightbulb, Trophy, Check } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowLeft, ArrowRight, Target, Lightbulb, Trophy, Check, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 import type { CaseStudy } from "@/lib/data";
 import { caseStudies } from "@/lib/data";
 import ContactModal from "@/components/ContactModal";
@@ -20,6 +20,20 @@ const fade = (delay: number) => ({
 export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy }) {
   const related = caseStudies.filter((c) => c.id !== cs.id && c.category === cs.category).slice(0, 3);
   const [modalOpen, setModalOpen] = useState(false);
+  const [lightbox, setLightbox] = useState<number | null>(null);
+
+  const closeLightbox = useCallback(() => setLightbox(null), []);
+
+  useEffect(() => {
+    if (lightbox === null || !cs.images) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") setLightbox((p) => (p !== null && p < cs.images!.length - 1 ? p + 1 : p));
+      if (e.key === "ArrowLeft") setLightbox((p) => (p !== null && p > 0 ? p - 1 : p));
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [lightbox, closeLightbox, cs.images]);
 
   return (
     <div className="min-h-screen">
@@ -172,8 +186,21 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
               {cs.images.map((img, i) => (
                 <div
                   key={i}
-                  className="rounded-[12px] border border-border overflow-hidden bg-surface"
+                  onClick={() => setLightbox(i)}
+                  className="group relative rounded-[12px] border border-border overflow-hidden bg-surface cursor-pointer"
                 >
+                  {/* Watermark */}
+                  <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+                    <span className="font-heading text-[24px] sm:text-[32px] font-bold select-none tracking-wide rotate-[-15deg] text-black/15 dark:text-white/15">
+                      LedoLab
+                    </span>
+                  </div>
+                  {/* Zoom hint */}
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-ink/0 group-hover:bg-ink/10 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-full bg-surface/80 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
+                      <ZoomIn size={18} className="text-ink" />
+                    </div>
+                  </div>
                   <Image
                     src={img}
                     alt={`${cs.title} – скриншот ${i + 1}`}
@@ -186,6 +213,78 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
             </div>
           </motion.div>
         )}
+
+        {/* Lightbox */}
+        <AnimatePresence>
+          {lightbox !== null && cs.images && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-[200] bg-ink/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+              onClick={closeLightbox}
+            >
+              <button
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 rounded-full bg-surface/20 backdrop-blur flex items-center justify-center text-white hover:bg-surface/30 transition-colors z-10"
+                aria-label="Close"
+              >
+                <X size={20} />
+              </button>
+
+              {lightbox > 0 && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox - 1); }}
+                  className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface/20 backdrop-blur flex items-center justify-center text-white hover:bg-surface/30 transition-colors z-10"
+                  aria-label="Previous"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+              )}
+
+              {lightbox < cs.images.length - 1 && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); setLightbox(lightbox + 1); }}
+                  className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface/20 backdrop-blur flex items-center justify-center text-white hover:bg-surface/30 transition-colors z-10"
+                  aria-label="Next"
+                >
+                  <ChevronRight size={20} />
+                </button>
+              )}
+
+              <motion.div
+                key={lightbox}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                className="relative w-full max-w-[1000px] max-h-[85vh] rounded-2xl overflow-hidden"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Watermark in lightbox */}
+                <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+                  <span className="font-heading text-[48px] sm:text-[64px] font-bold select-none tracking-wide rotate-[-15deg]" style={{ WebkitTextStroke: "1.5px rgba(255,255,255,0.25)" }}>
+                    <span className="text-black/20">LedoLab</span>
+                    <span className="absolute inset-0 text-white/20">LedoLab</span>
+                  </span>
+                </div>
+                <Image
+                  src={cs.images[lightbox]}
+                  alt={`${cs.title} – скриншот ${lightbox + 1}`}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto max-h-[85vh] object-contain bg-[#0d0d12] rounded-2xl"
+                  priority
+                />
+              </motion.div>
+
+              <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 text-[13px] text-white/50 font-medium">
+                {lightbox + 1} / {cs.images.length}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Results */}
         <motion.div
