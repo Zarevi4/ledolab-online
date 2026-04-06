@@ -6,8 +6,8 @@ import { useI18n } from "@/lib/i18n/context";
 export default function Footer() {
   const { t } = useI18n();
   return (
-    <footer className="border-t border-border py-8 px-6 lg:px-8">
-      <div className="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="border-t border-border py-8">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <span className="font-heading text-[16px] font-bold text-ink">
             <span className="gradient-text">LedoLab</span><span className="text-accent">.</span>

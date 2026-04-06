@@ -14,13 +14,13 @@ const fade = (delay: number) => ({
 export default function Hero() {
   const { t } = useI18n();
   return (
-    <section className="relative min-h-[100svh] flex items-center px-6 lg:px-8 pt-20 pb-12 overflow-hidden">
+    <section className="relative min-h-[100svh] flex items-center pt-20 pb-12 overflow-hidden">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-accent/[0.04] blur-[100px]" />
         <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full bg-accent-warm/[0.05] blur-[100px]" />
       </div>
 
-      <div className="relative max-w-[1100px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:gap-10 items-center">
+      <div className="relative max-w-[1200px] mx-auto px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:gap-10 items-center">
         {/* Left: text */}
         <div>
           <motion.div {...fade(0.15)}>

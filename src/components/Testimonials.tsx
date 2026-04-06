@@ -38,8 +38,8 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="reviews" className="py-28 sm:py-36 px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="reviews" className="py-28 sm:py-36 overflow-hidden">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         {/* Header with Google badge */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>

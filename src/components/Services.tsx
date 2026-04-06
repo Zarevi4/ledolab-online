@@ -99,8 +99,8 @@ const plans = [
 export default function Services() {
   const { t } = useI18n();
   return (
-    <section id="services" className="py-28 sm:py-36 px-6 lg:px-8 bg-bg-alt">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="services" className="py-28 sm:py-36 bg-bg-alt">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         {/* Promo banner */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

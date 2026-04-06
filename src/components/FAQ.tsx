@@ -10,8 +10,8 @@ export default function FAQ() {
   const { t } = useI18n();
 
   return (
-    <section className="py-28 sm:py-36 px-6 lg:px-8 bg-bg-alt">
-      <div className="max-w-[720px] mx-auto">
+    <section className="py-28 sm:py-36 bg-bg-alt">
+      <div className="max-w-[720px] mx-auto px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-12">
           <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.faq.tag}</span>
           <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
