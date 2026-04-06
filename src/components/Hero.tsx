@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full bg-accent-warm/[0.05] blur-[100px]" />
       </div>
 
-      <div className="relative max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div className="relative max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-12 items-center">
         {/* Left: text */}
         <div>
           <motion.div {...fade(0.15)}>

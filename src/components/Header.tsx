@@ -13,11 +13,11 @@ export default function Header() {
   const { t } = useI18n();
 
   const links = [
-    { href: "#services", label: t.nav.services },
-    { href: "#cases", label: t.nav.cases },
-    { href: "#reviews", label: t.nav.reviews },
-    { href: "#about", label: t.nav.about },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#cases", label: t.nav.cases },
+    { href: "/#reviews", label: t.nav.reviews },
+    { href: "/#about", label: t.nav.about },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export default function Header() {
             +38063 861 92 85
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="gradient-bg text-white text-[13px] font-semibold px-5 py-[9px] rounded-full hover:opacity-90 transition-opacity"
           >
             {t.nav.cta}
@@ -102,7 +102,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="block mt-2 text-center gradient-bg text-white text-[14px] font-semibold px-5 py-3 rounded-full"
           >

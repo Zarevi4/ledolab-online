@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
 const SevenFacts = dynamic(() => import("@/components/SevenFacts"), { ssr: true });
@@ -17,7 +16,6 @@ const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <Hero />
         <SevenFacts />
