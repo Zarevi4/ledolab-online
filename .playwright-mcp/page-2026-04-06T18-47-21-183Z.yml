@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: http://ledolab.online/eng
+        - img [ref=e9]
+      - generic [ref=e12]: Case Studies
+    - generic [ref=e15]:
+      - heading "1,547,668 RON in 6 months in the auto segment with Facebook Ads and TikTok Ads" [level=1] [ref=e17]
+      - generic [ref=e19]: November 20, 2023
+      - img [ref=e21]
+      - generic [ref=e25]:
+        - generic [ref=e26]: Бренд в нише автотоваров обратился в LedoLab с запросом на системное масштабирование продаж через Facebook Ads и TikTok Ads.
+        - generic [ref=e27]: Клиент пришёл с чётко определённой экономикой, сильным продуктом и качественным сайтом, но без стабильной рекламной структуры.
+        - generic [ref=e28]: Цель — выстроить каналы продаж, выйти на целевые CAC и обеспечить масштабируемость в пределах заданных KPI.
+        - figure [ref=e29]:
+          - img [ref=e30]
+        - heading "Цели проекта" [level=2] [ref=e31]
+        - list [ref=e33]:
+          - listitem [ref=e34]:
+            - text: удерживать
+            - strong [ref=e35]: CAC ≤ 120 RON
+          - listitem [ref=e36]: масштабировать продажи без ограничения бюджета
+          - listitem [ref=e37]: протестировать потенциал Facebook Ads и TikTok Ads
+          - listitem [ref=e38]: стабилизировать кампании до уровня 8–10 продаж/день
+          - listitem [ref=e39]: обеспечить предсказуемость и управляемость ROAS
+        - heading "Стартовая ситуация" [level=2] [ref=e40]
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - text: бренд работает
+            - strong [ref=e44]: 8 лет
+          - listitem [ref=e45]: сильное УТП + качественный продукт
+          - listitem [ref=e46]: сайт и аналитика — идеальные (готовы к масштабированию)
+          - listitem [ref=e47]:
+            - text: рекламные аккаунты Meta и TikTok —
+            - strong [ref=e48]: ноль данных, нулевая история
+          - listitem [ref=e49]: "аудитория узкая: владельцы автомобилей, обновляющие навигационные консоли"
+        - generic [ref=e50]: "По сути, это идеальная комбинация: сильный продукт + профессиональная упаковка → мы закрыли недостающую часть — системный performance-маркетинг."
+        - heading "Стратегия LedoLab" [level=2] [ref=e51]
+        - heading "1. Быстрый запуск — тестирование экономики на холоде" [level=3] [ref=e52]
+        - generic [ref=e53]: "Мы начали с общих каталогов, чтобы получить “чистые” цифры без оптимизации:"
+        - list [ref=e55]:
+          - listitem [ref=e56]: TikTok + Facebook одновременно
+          - listitem [ref=e57]:
+            - text: "бюджеты:"
+            - strong [ref=e58]: 200–400 RON/день на каждого
+          - listitem [ref=e59]: запуск с минимальными гипотезами, чтобы увидеть реальные CAC
+        - generic [ref=e60]: "Результат тестового этапа:"
+        - generic [ref=e61]:
+          - text: 👉 TikTok давал
+          - strong [ref=e62]: в 4 раза меньше продаж
+          - text: ", чем Facebook"
+        - figure [ref=e63]:
+          - img [ref=e64]
+        - generic [ref=e65]:
+          - text: 👉 поэтому придерживались соотношения бюджетов fb:tiktok =
+          - strong [ref=e66]: "75% : 25%"
+        - heading "2. Подготовка к Black Friday (первые 30 дней)" [level=3] [ref=e67]
+        - generic [ref=e68]: "Использовали низкий сезонный CAC для быстрого накопления данных:"
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - text: "Facebook: снижение CAC с"
+            - strong [ref=e72]: 110 до 60 RON
+          - listitem [ref=e73]: "TikTok: снижение бюджета до минимума (в этот период он проигрывал Meta)"
+        - heading "🔹 Результаты за 30 дней:" [level=4] [ref=e74]
+        - figure [ref=e75]:
+          - img [ref=e76]
+        - list [ref=e78]:
+          - listitem [ref=e79]:
+            - strong [ref=e80]: 175 продаж через Facebook Ads
+          - listitem [ref=e81]:
+            - strong [ref=e82]: 18 продаж через TikTok Ads
+          - listitem [ref=e83]:
+            - text: "выручка:"
+            - strong [ref=e84]: 196 073 RON
+          - listitem [ref=e85]: CAC стабилизирован в целевом диапазоне
+        - heading "3. Первые 90 дней — нестабильность бюджетов" [level=3] [ref=e86]
+        - figure [ref=e87]:
+          - img [ref=e88]
+        - generic [ref=e89]: "Главная проблема:"
+        - generic [ref=e90]:
+          - text: 📌 на бюджете
+          - strong [ref=e91]: выше 500 RON/день
+          - text: стоимость покупки резко росла до
+          - strong [ref=e92]: 100+ RON
+          - text: .
+        - generic [ref=e93]: "После множества итераций мы изменили подход:"
+        - heading "❗ Новый принцип работы:" [level=4] [ref=e94]
+        - generic [ref=e95]:
+          - text: 🕒
+          - emphasis [ref=e96]: динамическое управление бюджетами на основе эффективности кампаний в течение дня
+        - generic [ref=e97]: "Это позволило:"
+        - list [ref=e99]:
+          - listitem [ref=e100]: выйти за лимит 500 RON
+          - listitem [ref=e101]:
+            - text: удерживать
+            - strong [ref=e102]: CAC < 100 RON
+          - listitem [ref=e103]:
+            - text: держать
+            - strong [ref=e104]: 8–10 продаж ежедневно стабильно
+          - listitem [ref=e105]: при этом сохранять контроль и предсказуемость
+        - heading "4. Операционные метрики" [level=2] [ref=e106]
+        - figure [ref=e107]:
+          - img [ref=e108]
+        - generic [ref=e109]: "У клиента была крайне низкая возвращаемость товара:"
+        - generic [ref=e110]:
+          - text: 👉
+          - strong [ref=e111]: до 1 возврата на 600 заказов
+        - generic [ref=e112]: "Это критично важно: низкий return-rate усиливает ROAS и стабилизирует прибыль."
+        - heading "Результаты за 6 месяцев" [level=2] [ref=e113]
+        - figure [ref=e114]:
+          - img [ref=e115]
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - text: 📈
+            - strong [ref=e119]: +49,5% рост продаж на сайте
+            - text: благодаря Facebook + TikTok
+          - listitem [ref=e120]:
+            - text: 🛒
+            - strong [ref=e121]: 1 509 продаж
+            - text: (Meta + TikTok)
+          - listitem [ref=e122]:
+            - text: 💰
+            - strong [ref=e123]: 1 547 668 RON выручки
+          - listitem [ref=e124]:
+            - text: 🎯
+            - strong [ref=e125]: Средний CAC — 95,56 RON
+          - listitem [ref=e126]: 🔥 идеально вписываемся в целевые метрики клиента
+          - listitem [ref=e127]: 🌍 комбинация Facebook + TikTok + Google (клиент вёл Google сам) дала стабильный рост
+        - heading "Вывод" [level=2] [ref=e128]
+        - generic [ref=e129]: Мы не просто запустили рекламу —
+        - generic [ref=e130]:
+          - text: мы выстроили
+          - strong [ref=e131]: системную модель продаж
+          - text: ", которая:"
+        - list [ref=e133]:
+          - listitem [ref=e134]: работает на холодном рынке
+          - listitem [ref=e135]: масштабируется без потери эффективности
+          - listitem [ref=e136]: удерживает CAC в целевом диапазоне
+          - listitem [ref=e137]: обеспечивает стабильный cash-flow и высокий контроль метрик
+        - generic [ref=e138]: Этот кейс — пример того, как правильная упаковка продукта + сильная аналитика + грамотный performance = взрывной рост даже в узкой нише.
+  - link "Made on Tilda" [ref=e140] [cursor=pointer]:
+    - /url: https://tilda.cc/
+    - generic [ref=e141]:
+      - generic [ref=e142]: Made on
+      - generic [ref=e144]: Tilda

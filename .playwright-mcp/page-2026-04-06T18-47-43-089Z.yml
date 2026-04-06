@@ -1,0 +1,348 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Кейсы" [ref=e9] [cursor=pointer]:
+            - /url: "#rec1569577003"
+        - listitem [ref=e10]:
+          - link "Отзывы" [ref=e11] [cursor=pointer]:
+            - /url: "#rec1569551333"
+        - listitem [ref=e12]:
+          - link "Услуги" [ref=e13] [cursor=pointer]:
+            - /url: "#rec1885969143"
+        - listitem [ref=e14]:
+          - link "О нас" [ref=e15] [cursor=pointer]:
+            - /url: "#rec1607603653"
+        - listitem [ref=e16]:
+          - link "Контакты" [ref=e17] [cursor=pointer]:
+            - /url: "#rec1524482833"
+      - generic [ref=e18]:
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - link "UKR" [ref=e22] [cursor=pointer]:
+              - /url: https://ledolab.online/ukr
+        - generic [ref=e24]: +38063 861 92 85
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "LedoLab Marketing Digital Agency от 0 до 100 000 $." [level=1] [ref=e34]:
+          - generic [ref=e35]: LedoLab Marketing Digital Agency от 0 до 100 000 $.
+        - generic [ref=e37]:
+          - strong [ref=e38]: Системно выводим бизнесы на рынок под ключ — от первой продажи до $100 000
+          - strong [ref=e39]: Получите первые 50+ лидов за 30 дней — без угадываний и пустых трат
+          - strong [ref=e40]: "Окупаемый маркетинг: не расход, а точка масштабирования"
+          - strong [ref=e41]: Вы получите команду профессионалов по цене 1 таргетолога
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - strong [ref=e46]: Не пропустите!
+            - strong [ref=e47]
+            - text: 19.99€ вместо 1̶0̶0̶€ до 31.03.2026
+          - strong [ref=e49]: Полный маркетинг-аудит + пошаговый план роста трафика и лидов
+        - form [ref=e50]:
+          - generic [ref=e51]:
+            - textbox "Name" [ref=e54]
+            - generic [ref=e58]:
+              - generic [ref=e59] [cursor=pointer]:
+                - generic [ref=e65]: Phone
+                - radio "Phone" [checked] [disabled] [ref=e66]
+              - generic [ref=e67] [cursor=pointer]:
+                - generic [ref=e72]: Telegram
+                - radio "Telegram" [disabled] [ref=e73]
+              - generic [ref=e74] [cursor=pointer]:
+                - generic [ref=e79]: WhatsApp
+                - radio "WhatsApp" [disabled] [ref=e80]
+              - generic [ref=e81] [cursor=pointer]:
+                - generic [ref=e86]: Viber
+                - radio "Viber" [disabled] [ref=e87]
+            - textbox "your_email@gmail.com" [ref=e90]
+            - textbox "www.your_site.com" [ref=e93]
+            - button "Начать рост сейчас!" [ref=e95] [cursor=pointer]:
+              - generic [ref=e97]: Начать рост сейчас!
+    - generic [ref=e103]: 7 пунктов о нас в цифрах
+    - generic [ref=e108]:
+      - generic [ref=e109]: Сертификаты
+      - generic [ref=e110]: Достижения и награды
+    - generic [ref=e112]:
+      - generic [ref=e114]:
+        - generic [ref=e115]: Наши услуги
+        - generic [ref=e116]:
+          - strong [ref=e117]: Не пропустите!
+          - strong [ref=e118]: "1"
+          - strong [ref=e119]: 9.99€
+          - strong [ref=e120]: вместо
+          - text: 1̶0̶0̶€
+          - strong [ref=e121]: до
+          - strong [ref=e122]: 31.03.2026
+          - text: .
+          - strong
+          - strong [ref=e123]: Полный маркетинг-аудит + пошаговый план роста трафика и лидов
+      - generic [ref=e125]:
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - text: 🧩
+            - strong [ref=e129]: Growth Starter System окупаемого трафика
+          - generic [ref=e130]:
+            - strong [ref=e131]: Запускаем и настраиваем базовую систему, которая начинает приносить заявки и продажи уже в первый месяц — без лишних расходов и хаоса.
+            - text: "Что входит в систему:"
+            - text: 🔹 Facebook / Instagram Ads — 1 источник трафика
+            - text: 🔹 1 продающая воронка под ключ
+            - text: 🔹 Email-маркетинг — базовый дожим и автосерия
+            - text: 🔹 CRO — улучшение ключевых точек конверсии
+            - text: 🔹 Базовая аналитика — считаем заявки и деньги, не клики
+            - text: 🔹 Ремаркетинг / Ретаргетинг
+            - text: 🔹 Продающие офферы и креативы под заявки
+            - text: 🔹 Разбор конкурентов и тестирование новых гипотез для роста продаж и прибыли
+            - text: 🔹 Affiliate и партнёрские воронки для масштабирования
+            - text: 🔹 Интеграции с CRM, ERP и BI-системами
+            - text: 🔹 Персональный менеджер и еженедельная стратегия масштабирования
+            - strong [ref=e132]: "Если заказывать по отдельности:"
+            - table [ref=e134]:
+              - rowgroup [ref=e138]:
+                - row "Услуга Цена" [ref=e139]:
+                  - cell "Услуга" [ref=e140]:
+                    - paragraph [ref=e141]: Услуга
+                  - cell "Цена" [ref=e142]:
+                    - paragraph [ref=e143]: Цена
+                - row "Трафик (FB / IG) €500" [ref=e144]:
+                  - cell "Трафик (FB / IG)" [ref=e145]:
+                    - paragraph [ref=e146]: Трафик (FB / IG)
+                  - cell "€500" [ref=e147]:
+                    - paragraph [ref=e148]: €500
+                - row "Воронка €200" [ref=e149]:
+                  - cell "Воронка" [ref=e150]:
+                    - paragraph [ref=e151]: Воронка
+                  - cell "€200" [ref=e152]:
+                    - paragraph [ref=e153]: €200
+                - row "Email-маркетинг €100" [ref=e154]:
+                  - cell "Email-маркетинг" [ref=e155]:
+                    - paragraph [ref=e156]: Email-маркетинг
+                  - cell "€100" [ref=e157]:
+                    - paragraph [ref=e158]: €100
+                - row "CRO €200" [ref=e159]:
+                  - cell "CRO" [ref=e160]:
+                    - paragraph [ref=e161]: CRO
+                  - cell "€200" [ref=e162]:
+                    - paragraph [ref=e163]: €200
+                - row "Аналитика €100" [ref=e164]:
+                  - cell "Аналитика" [ref=e165]:
+                    - paragraph [ref=e166]: Аналитика
+                  - cell "€100" [ref=e167]:
+                    - paragraph [ref=e168]: €100
+            - strong [ref=e169]: "Итого: €̶1̶0̶̶̶0̶̶̶0̶̶̶ / месяц"
+          - generic [ref=e170]: €400
+          - link "Подробнее" [ref=e171] [cursor=pointer]:
+            - /url: "#rec1524482713"
+            - generic [ref=e173]: Подробнее
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - text: 🚀 Growth
+            - strong [ref=e177]: System окупаемого трафика
+          - generic [ref=e178]:
+            - strong [ref=e179]: "Предсказуемый и окупаемый трафик, работающие воронки и аналитика, которые сразу приносят результат, превращая маркетинг не в расход, а в точку роста и инструмент прогнозируемого дохода:"
+            - text: "Что входит в систему:"
+            - text: 🔹 2 источника трафика (Meta / TikTok / Google — под нишу)
+            - text: 🔹 2–3 продающие воронки под разные сегменты
+            - text: 🔹 Продающие офферы и креативы под заявки и продажи
+            - text: 🔹 Email-маркетинг и автоматический дожим
+            - text: 🔹 CRO — рост конверсии без увеличения бюджета
+            - text: 🔹 Сквозная аналитика и LTV (считаем деньги, а не клики)
+            - text: 🔹 Ремаркетинг / Ретаргетинг
+            - text: 🔹 Разбор конкурентов и тестирование новых гипотез для роста продаж и прибыли
+            - text: 🔹 Affiliate и партнёрские воронки для масштабирования
+            - text: 🔹 Интеграции с CRM, ERP и BI-системами
+            - text: 🔹 Персональный менеджер и еженедельная стратегия масштабирования
+            - strong [ref=e180]: "Если заказывать по отдельности:"
+            - table [ref=e182]:
+              - rowgroup [ref=e186]:
+                - row "Услуга Цена" [ref=e187]:
+                  - cell "Услуга" [ref=e188]:
+                    - paragraph [ref=e189]: Услуга
+                  - cell "Цена" [ref=e190]:
+                    - paragraph [ref=e191]: Цена
+                - row "Трафик (2 источника) €800" [ref=e192]:
+                  - cell "Трафик (2 источника)" [ref=e193]:
+                    - paragraph [ref=e194]: Трафик (2 источника)
+                  - cell "€800" [ref=e195]:
+                    - paragraph [ref=e196]: €800
+                - row "Воронки (2–3) €400" [ref=e197]:
+                  - cell "Воронки (2–3)" [ref=e198]:
+                    - paragraph [ref=e199]: Воронки (2–3)
+                  - cell "€400" [ref=e200]:
+                    - paragraph [ref=e201]: €400
+                - row "Email-маркетинг / дожим €200" [ref=e202]:
+                  - cell "Email-маркетинг / дожим" [ref=e203]:
+                    - paragraph [ref=e204]: Email-маркетинг / дожим
+                  - cell "€200" [ref=e205]:
+                    - paragraph [ref=e206]: €200
+                - row "CRO €300" [ref=e207]:
+                  - cell "CRO" [ref=e208]:
+                    - paragraph [ref=e209]: CRO
+                  - cell "€300" [ref=e210]:
+                    - paragraph [ref=e211]: €300
+                - row "Сквозная аналитика и LTV €300" [ref=e212]:
+                  - cell "Сквозная аналитика и LTV" [ref=e213]:
+                    - paragraph [ref=e214]: Сквозная аналитика и LTV
+                  - cell "€300" [ref=e215]:
+                    - paragraph [ref=e216]: €300
+            - strong [ref=e217]: "Итого: €̶2̶0̶0̶0̶ / месяц"
+          - generic [ref=e218]: €800
+          - link "Подробнее" [ref=e219] [cursor=pointer]:
+            - /url: "#rec1524482713"
+            - generic [ref=e221]: Подробнее
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - text: 💎
+            - strong [ref=e225]: Growth Full System Enterprise
+          - generic [ref=e226]:
+            - text: "Что входит в систему:"
+            - text: 🔹 Все ключевые источники трафика (Meta / TikTok / Google + дополнительные каналы по нише)
+            - text: 🔹 5+ продающих воронок под разные сегменты и офферы
+            - text: 🔹 Продающие офферы и креативы под заявки и продажи
+            - text: 🔹 Email-маркетинг, SMS и автоматический дожим для возврата клиентов
+            - text: 🔹 CRO и Conversion Rating — рост конверсии без увеличения бюджета
+            - text: 🔹 Сквозная аналитика, LTV и ROI — считаем деньги, а не клики
+            - text: 🔹 Ремаркетинг / Ретаргетинг
+            - text: 🔹 Разбор конкурентов и тестирование новых гипотез для роста продаж и прибыли
+            - text: 🔹 Affiliate и партнёрские воронки для масштабирования
+            - text: 🔹 Интеграции с CRM, ERP и BI-системами для полного контроля данных
+            - text: 🔹 Персональный менеджер и еженедельная стратегия масштабирования
+            - strong [ref=e227]: "Если заказывать по отдельности:"
+            - table [ref=e229]:
+              - rowgroup [ref=e233]:
+                - row "Услуга Цена" [ref=e234]:
+                  - cell "Услуга" [ref=e235]:
+                    - paragraph [ref=e236]: Услуга
+                  - cell "Цена" [ref=e237]:
+                    - paragraph [ref=e238]: Цена
+                - row "Трафик и источники €800" [ref=e239]:
+                  - cell "Трафик и источники" [ref=e240]:
+                    - paragraph [ref=e241]: Трафик и источники
+                  - cell "€800" [ref=e242]:
+                    - paragraph [ref=e243]: €800
+                - row "Воронки (5+) €500" [ref=e244]:
+                  - cell "Воронки (5+)" [ref=e245]:
+                    - paragraph [ref=e246]: Воронки (5+)
+                  - cell "€500" [ref=e247]:
+                    - paragraph [ref=e248]: €500
+                - row "Email / SMS / дожим €400" [ref=e249]:
+                  - cell "Email / SMS / дожим" [ref=e250]:
+                    - paragraph [ref=e251]: Email / SMS / дожим
+                  - cell "€400" [ref=e252]:
+                    - paragraph [ref=e253]: €400
+                - row "CRO + Conversion Rating €400" [ref=e254]:
+                  - cell "CRO + Conversion Rating" [ref=e255]:
+                    - paragraph [ref=e256]: CRO + Conversion Rating
+                  - cell "€400" [ref=e257]:
+                    - paragraph [ref=e258]: €400
+                - row "Сквозная аналитика, LTV, ROI €400" [ref=e259]:
+                  - cell "Сквозная аналитика, LTV, ROI" [ref=e260]:
+                    - paragraph [ref=e261]: Сквозная аналитика, LTV, ROI
+                  - cell "€400" [ref=e262]:
+                    - paragraph [ref=e263]: €400
+                - row "Affiliate / партнёрки €400" [ref=e264]:
+                  - cell "Affiliate / партнёрки" [ref=e265]:
+                    - paragraph [ref=e266]: Affiliate / партнёрки
+                  - cell "€400" [ref=e267]:
+                    - paragraph [ref=e268]: €400
+                - row "Персональный менеджер + стратегия €300" [ref=e269]:
+                  - cell "Персональный менеджер + стратегия" [ref=e270]:
+                    - paragraph [ref=e271]: Персональный менеджер + стратегия
+                  - cell "€300" [ref=e272]:
+                    - paragraph [ref=e273]: €300
+                - row "Разбор конкурентов + гипотезы €300" [ref=e274]:
+                  - cell "Разбор конкурентов + гипотезы" [ref=e275]:
+                    - paragraph [ref=e276]: Разбор конкурентов + гипотезы
+                  - cell "€300" [ref=e277]:
+                    - paragraph [ref=e278]: €300
+            - strong [ref=e279]: "Итого: €3̶5̶0̶0̶ / месяц"
+          - generic [ref=e280]: €1500
+          - link "Подробнее" [ref=e281] [cursor=pointer]:
+            - /url: "#rec1524482713"
+            - generic [ref=e283]: Подробнее
+    - generic [ref=e288]: Кейсы наших клиентов
+    - link "Оставить заявку" [ref=e292] [cursor=pointer]:
+      - /url: "#rec1524482713"
+      - generic [ref=e294]: Оставить заявку
+    - generic [ref=e300]: Отзывы
+    - generic [ref=e309]:
+      - generic [ref=e310]: О владельце
+      - generic [ref=e312]:
+        - text: Денис Ледовской — основатель LedoLab Digital, маркетолог с 10+ годами опыта и практикой в Европе, США и СНГ.
+        - text: Специализируется на построении системного маркетинга, performance-рекламе и масштабировании eCommerce-проектов.
+        - text: За 2024 год вложено в рекламу более 1 500 000 $
+    - link "Оставить заявку" [ref=e315] [cursor=pointer]:
+      - /url: "#rec1524482713"
+      - generic [ref=e317]: Оставить заявку
+    - generic [ref=e319]:
+      - generic [ref=e322]: Как мы работаем
+      - list [ref=e323]:
+        - listitem [ref=e324]:
+          - generic [ref=e328]:
+            - generic [ref=e329]: Знакомство и консультация
+            - generic [ref=e330]: Определяем ваши цели, потребности и бюджет.
+        - listitem [ref=e331]:
+          - generic [ref=e335]:
+            - generic [ref=e336]: Аудит
+            - generic [ref=e337]: Собираем аналитику по сайту, изучаем ваш бизнес, конкурентов и нишу.
+        - listitem [ref=e338]:
+          - generic [ref=e342]:
+            - generic [ref=e343]: Планирование
+            - generic [ref=e344]: Разрабатываем персональную стратегию продвижения.
+        - listitem [ref=e345]:
+          - generic [ref=e349]:
+            - generic [ref=e350]: Договор
+            - generic [ref=e351]: Фиксируем сотрудничество и предоставляем вам официальные гарантии результата.
+        - listitem [ref=e352]:
+          - generic [ref=e356]:
+            - generic [ref=e357]: Старт продвижения
+            - generic [ref=e358]: Запускаем работы в соответствии с утверждённым планом.
+        - listitem [ref=e359]:
+          - generic [ref=e363]:
+            - generic [ref=e364]: Масштабирование
+            - generic [ref=e365]: «Усиливаем сильное», развивая самые эффективные кампании.
+    - generic [ref=e367]:
+      - generic [ref=e369]:
+        - generic [ref=e370]: FAQs
+        - generic [ref=e371]: Если у вас осталось остальные вопросы позвоните нам или оставьте заявку
+      - generic [ref=e372]:
+        - button "Что входит в аудит?" [ref=e377] [cursor=pointer]:
+          - strong [ref=e379]: Что входит в аудит?
+        - button "Можно ли начать работать только с одной услугой?" [ref=e394] [cursor=pointer]:
+          - generic [ref=e395]: Можно ли начать работать только с одной услугой?
+        - button "Даете ли вы гарантии результата?" [ref=e410] [cursor=pointer]:
+          - generic [ref=e411]: Даете ли вы гарантии результата?
+    - link "Оставить заявку" [ref=e424] [cursor=pointer]:
+      - /url: "#rec1524482713"
+      - generic [ref=e426]: Оставить заявку
+    - generic [ref=e435]:
+      - generic [ref=e436]: "Контакты:"
+      - generic [ref=e437]:
+        - strong [ref=e438]: "Телефон:"
+        - text: +380 63 861 92 85
+        - strong [ref=e439]: "Email:"
+        - text: support@ledolab.online
+        - strong [ref=e440]: LEDO LAB EOOD
+        - text: "Company ID (EIK): 208624555"
+        - text: Bulgaria, Burgas
+      - list "Social media links" [ref=e442]:
+        - listitem [ref=e443]:
+          - link "Telegram" [ref=e444] [cursor=pointer]:
+            - /url: https://t.me/dennnnnnnni
+        - listitem [ref=e446]:
+          - link "WhatsApp" [ref=e447] [cursor=pointer]:
+            - /url: https://wa.me/380638619285
+        - listitem [ref=e449]:
+          - link "instagram" [ref=e450] [cursor=pointer]:
+            - /url: https://www.instagram.com/ledolab.online?igsh=aTh4aGtiMnVtN3g2
+        - listitem [ref=e452]:
+          - link "youtube" [ref=e453] [cursor=pointer]:
+            - /url: https://www.youtube.com/@ledolab.online
+        - listitem [ref=e455]:
+          - link "tiktok" [ref=e456] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@ledolab.online
+  - link "Made on Tilda" [ref=e459] [cursor=pointer]:
+    - /url: https://tilda.cc/
+    - generic [ref=e460]:
+      - generic [ref=e461]: Made on
+      - generic [ref=e463]: Tilda

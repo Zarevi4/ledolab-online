@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState, useCallback, useEffect } from "react";
 import type { CaseStudy } from "@/lib/data";
 import { caseStudies } from "@/lib/data";
+import { caseFullContent } from "@/lib/case-content";
 import ContactModal from "@/components/ContactModal";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -19,6 +20,7 @@ const fade = (delay: number) => ({
 
 export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy }) {
   const related = caseStudies.filter((c) => c.id !== cs.id && c.category === cs.category).slice(0, 3);
+  const full = caseFullContent[cs.id];
   const [modalOpen, setModalOpen] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
   const [zoomed, setZoomed] = useState(false);
@@ -130,48 +132,82 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
 
       {/* Content */}
       <div className="max-w-[900px] mx-auto px-6 lg:px-8 py-20 sm:py-28">
-        {/* Challenge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center">
-              <Target size={20} strokeWidth={1.8} />
-            </div>
-            <h2 className="font-heading text-[22px] font-bold text-ink">Задача</h2>
-          </div>
-          <p className="text-[16px] text-ink-light leading-relaxed pl-[52px]">
-            {cs.challenge}
-          </p>
-        </motion.div>
+        {/* Intro */}
+        {full?.intro && (
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-10">
+            <p className="text-[16px] text-ink-light leading-relaxed">{full.intro}</p>
+          </motion.div>
+        )}
 
-        {/* Strategy */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
-              <Lightbulb size={20} strokeWidth={1.8} />
+        {/* Goals */}
+        {full?.goals && (
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-10">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center">
+                <Target size={20} strokeWidth={1.8} />
+              </div>
+              <h2 className="font-heading text-[22px] font-bold text-ink">Цели проекта</h2>
             </div>
-            <h2 className="font-heading text-[22px] font-bold text-ink">Стратегия</h2>
-          </div>
-          <ul className="space-y-3 pl-[52px]">
-            {cs.strategy.map((s, i) => (
-              <li key={i} className="flex items-start gap-3 text-[15px] text-ink-light leading-relaxed">
-                <Check size={16} className="text-accent mt-1 shrink-0" />
-                {s}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+            <ul className="space-y-2.5 pl-[52px]">
+              {full.goals.map((g, i) => (
+                <li key={i} className="flex items-start gap-3 text-[15px] text-ink-light leading-relaxed">
+                  <Check size={16} className="text-accent mt-1 shrink-0" />{g}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+
+        {/* Starting situation */}
+        {full?.situation && (
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-10">
+            <p className="text-[14px] text-ink-faint italic leading-relaxed p-4 rounded-xl border border-border bg-bg-alt">{full.situation}</p>
+          </motion.div>
+        )}
+
+        {/* Phases */}
+        {full?.phases && (
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
+                <Lightbulb size={20} strokeWidth={1.8} />
+              </div>
+              <h2 className="font-heading text-[22px] font-bold text-ink">Стратегия и реализация</h2>
+            </div>
+            <div className="space-y-5 pl-[52px]">
+              {full.phases.map((phase, i) => (
+                <div key={i} className="rounded-[16px] border border-border bg-surface p-5">
+                  <h3 className="font-heading text-[15px] font-semibold text-ink mb-2">{phase.title}</h3>
+                  <p className="text-[14px] text-ink-light leading-relaxed">{phase.text}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* Fallback: old strategy if no full content */}
+        {!full && (
+          <>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center"><Target size={20} strokeWidth={1.8} /></div>
+                <h2 className="font-heading text-[22px] font-bold text-ink">Задача</h2>
+              </div>
+              <p className="text-[16px] text-ink-light leading-relaxed pl-[52px]">{cs.challenge}</p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center"><Lightbulb size={20} strokeWidth={1.8} /></div>
+                <h2 className="font-heading text-[22px] font-bold text-ink">Стратегия</h2>
+              </div>
+              <ul className="space-y-3 pl-[52px]">
+                {cs.strategy.map((s, i) => (
+                  <li key={i} className="flex items-start gap-3 text-[15px] text-ink-light leading-relaxed"><Check size={16} className="text-accent mt-1 shrink-0" />{s}</li>
+                ))}
+              </ul>
+            </motion.div>
+          </>
+        )}
 
         {/* Screenshots gallery */}
         {cs.images && cs.images.length > 0 && (
@@ -316,6 +352,11 @@ export default function CasePageClient({ caseStudy: cs }: { caseStudy: CaseStudy
               </li>
             ))}
           </ul>
+          {full?.conclusion && (
+            <p className="mt-6 pl-[52px] text-[15px] text-ink-light leading-relaxed p-4 rounded-xl border border-emerald-200/50 bg-emerald-50/30 dark:border-emerald-800/30 dark:bg-emerald-950/20">
+              {full.conclusion}
+            </p>
+          )}
         </motion.div>
 
         {/* CTA */}

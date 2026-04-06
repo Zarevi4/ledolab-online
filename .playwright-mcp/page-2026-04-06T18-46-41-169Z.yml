@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: http://ledolab.online/eng
+        - img [ref=e9]
+      - generic [ref=e12]: Case Studies
+    - generic [ref=e15]:
+      - heading "E-commerce launch from $0 to $118,000 in 90 days using Facebook Ads and TikTok Ads" [level=1] [ref=e17]
+      - generic [ref=e19]: November 20, 2023
+      - img [ref=e21]
+      - generic [ref=e25]:
+        - generic [ref=e26]: Наш клиент — производитель функциональных аксессуаров для спорта и повседневного использования. Продукт новый, бренд на рынке никто не знает, посадочной страницы и контента — минимум. Основная задача — быстро протестировать рынок, найти рабочие связки и вывести продукт в стабильные продажи.
+        - generic [ref=e27]: "Мы зашли в проект с нуля: настроили аналитику, создали креативы, выстроили структуру рекламных кампаний и масштабировали результат."
+        - heading "Цели проекта" [level=2] [ref=e28]
+        - list [ref=e30]:
+          - listitem [ref=e31]: Протестировать новый продукт и понять реальный спрос
+          - listitem [ref=e32]: Выйти на окупаемость в первые недели
+          - listitem [ref=e33]:
+            - text: Достичь оборота
+            - strong [ref=e34]: $100 000+ за первые 3 месяца
+          - listitem [ref=e35]: Найти лучший канал между Facebook Ads / TikTok Ads
+          - listitem [ref=e36]: Сформировать креативную систему, которую можно масштабировать
+        - heading "Стратегия LedoLab" [level=2] [ref=e37]
+        - heading "1. Аналитика и подготовка" [level=3] [ref=e38]
+        - generic [ref=e39]: "Мы настроили:"
+        - list [ref=e41]:
+          - listitem [ref=e42]: пиксель Meta + события
+          - listitem [ref=e43]: TikTok Pixel
+          - listitem [ref=e44]: систему UTM-отслеживания
+          - listitem [ref=e45]: математическую модель CAC/CPA/ROAS
+          - listitem [ref=e46]: структуру отчётности Looker Studio
+        - generic [ref=e47]: Провели конкурентный анализ — выделили 7 ключевых УТП, протестировали 4 гипотезы позиционирования.
+        - heading "2. Тестирование связок и гипотез" [level=3] [ref=e48]
+        - generic [ref=e49]: "Мы разделили стратегию на 2 направления:"
+        - heading "TikTok Ads — креативное тестирование" [level=4] [ref=e50]
+        - list [ref=e52]:
+          - listitem [ref=e53]: 18 нативных коротких видео
+          - listitem [ref=e54]: "разные модели: POV, UGC, обзор, протест"
+          - listitem [ref=e55]: 4 варианта оффера
+          - listitem [ref=e56]: широкие аудитории
+          - listitem [ref=e57]: оптимизация на Add to Cart → Purchase
+        - heading "Facebook Ads — структурная работа" [level=4] [ref=e58]
+        - list [ref=e60]:
+          - listitem [ref=e61]: ABO + CBO тесты
+          - listitem [ref=e62]: "12 аудиторий: интересы, LAL, warm"
+          - listitem [ref=e63]: тест изображений vs видео
+          - listitem [ref=e64]: запуск ремаркетинга на 7 / 14 / 30 дней
+          - listitem [ref=e65]: запуск Advantage+
+        - heading "3. Масштабирование" [level=3] [ref=e66]
+        - generic [ref=e67]: "После фазы тестирования:"
+        - list [ref=e69]:
+          - listitem [ref=e70]:
+            - text: TikTok дал
+            - strong [ref=e71]: сильный объём трафика
+            - text: ", но слабую конверсию → оставили в качестве TOF"
+          - listitem [ref=e72]:
+            - text: Facebook + Advantage Plus стал
+            - strong [ref=e73]: основным драйвером продаж
+          - listitem [ref=e74]: создали креативную систему из 6 связок, которые давали стабильный ROAS 4–6
+        - heading "Результаты" [level=2] [ref=e75]
+        - heading "За первые 14 дней" [level=4] [ref=e76]
+        - generic [ref=e77]: 💥 Продукт подтвердил спрос
+        - generic [ref=e78]: 📈 CAC стабилизировался на уровне $9
+        - generic [ref=e79]: 🧪 2 победные связки по Facebook и 1 по TikTok
+        - heading "За 30 дней" [level=4] [ref=e80]
+        - generic [ref=e81]: 💰 $38 000 оборота
+        - generic [ref=e82]: 🔥 ROAS стабилен на уровне 420%
+        - generic [ref=e83]: ⚡ CTR вырос на 27% после обновления креативов
+        - heading "За 60 дней" [level=4] [ref=e84]
+        - generic [ref=e85]: 🛒 $78 000 оборота
+        - generic [ref=e86]: 📈 11 500 кликов
+        - generic [ref=e87]: 🎯 CPA — $11
+        - generic [ref=e88]: 🚀 Оптимизация на Purchase для TikTok дала +32% покупок
+        - heading "За 90 дней" [level=4] [ref=e89]
+        - generic [ref=e90]:
+          - text: 💰
+          - strong [ref=e91]: $118 000 оборота
+        - generic [ref=e92]:
+          - text: 📈
+          - strong [ref=e93]: ROAS — 510%
+        - generic [ref=e94]:
+          - text: 🛒
+          - strong [ref=e95]: 2400+ продаж
+        - generic [ref=e96]: 🔥 Сформированы рабочие сегменты и креативная система
+        - generic [ref=e97]: 🌍 Аудитории расширены на США, Польшу, Германию
+  - link "Made on Tilda" [ref=e99] [cursor=pointer]:
+    - /url: https://tilda.cc/
+    - generic [ref=e100]:
+      - generic [ref=e101]: Made on
+      - generic [ref=e103]: Tilda

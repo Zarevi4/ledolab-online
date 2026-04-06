@@ -12,6 +12,13 @@ export interface CaseStudy {
   badge: string;
   heroImage?: string;
   images?: string[];
+  fullContent?: {
+    intro?: string;
+    goals?: string[];
+    situation?: string;
+    phases?: { title: string; text: string }[];
+    conclusion?: string;
+  };
 }
 
 export interface ServicePlan {
