@@ -29,9 +29,8 @@ export default function Hero() {
             </span>
           </motion.div>
           <motion.h1 {...fade(0.25)} className="font-heading text-[clamp(2rem,4.5vw,3.4rem)] font-bold leading-[1.12] tracking-[-0.025em] text-ink">
-            {t.hero.title}
-            <br />
-            <span className="gradient-text">{t.hero.titleAccent}</span>
+            {t.hero.title}{" "}
+            <span className="gradient-text whitespace-nowrap">{t.hero.titleAccent}</span>
           </motion.h1>
           <motion.div {...fade(0.4)} className="mt-5 space-y-2">
             {t.hero.subtitle.split('. ').filter(Boolean).map((line, i) => (

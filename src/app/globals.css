@@ -1,10 +1,20 @@
 @import "tailwindcss";
 
-/* Override slick font to swap display */
+/* Override slick font — block original, use local with swap */
 @font-face {
   font-family: 'slick';
   font-display: swap;
+  font-weight: normal;
+  font-style: normal;
   src: url('/fonts/slick.woff') format('woff');
+}
+
+/* Hide slick arrows/dots text (removes need for slick font entirely) */
+.slick-prev:before,
+.slick-next:before,
+.slick-dots li button:before {
+  font-family: inherit !important;
+  content: '' !important;
 }
 
 :root {
