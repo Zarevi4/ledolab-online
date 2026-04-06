@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useI18n } from "@/lib/i18n/context";
@@ -11,6 +12,25 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useI18n();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleAnchor = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    const hash = href.replace("/", "");
+    if (pathname === "/") {
+      e.preventDefault();
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      router.push("/");
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 500);
+    }
+    setOpen(false);
+  }, [pathname, router]);
 
   const links = [
     { href: "/#services", label: t.nav.services },
@@ -50,6 +70,7 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => handleAnchor(e, l.href)}
               className="text-[13px] font-medium text-ink-light hover:text-ink transition-colors tracking-wide"
             >
               {l.label}
@@ -66,6 +87,7 @@ export default function Header() {
           </a>
           <a
             href="/#contact"
+            onClick={(e) => handleAnchor(e, "/#contact")}
             className="gradient-bg text-white text-[13px] font-semibold px-5 py-[9px] rounded-full hover:opacity-90 transition-opacity"
           >
             {t.nav.cta}
@@ -95,7 +117,7 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
-              onClick={() => setOpen(false)}
+              onClick={(e) => handleAnchor(e, l.href)}
               className="block py-3 text-[15px] text-ink-light hover:text-ink transition-colors"
             >
               {l.label}
@@ -103,7 +125,7 @@ export default function Header() {
           ))}
           <a
             href="/#contact"
-            onClick={() => setOpen(false)}
+            onClick={(e) => handleAnchor(e, "/#contact")}
             className="block mt-2 text-center gradient-bg text-white text-[14px] font-semibold px-5 py-3 rounded-full"
           >
             {t.nav.cta}
