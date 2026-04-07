@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,21 +14,27 @@ import { useI18n } from "@/lib/i18n/context";
 export default function CaseStudies() {
   const sliderRef = useRef<Slider>(null);
   const { t } = useI18n();
+  const [slides, setSlides] = useState(3);
+  useEffect(() => {
+    const calc = () => {
+      const w = window.innerWidth;
+      setSlides(w < 640 ? 1 : w < 1024 ? 2 : 3);
+    };
+    calc();
+    window.addEventListener("resize", calc);
+    return () => window.removeEventListener("resize", calc);
+  }, []);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slides,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
     appendDots: (dots: React.ReactNode) => (
       <div>
         <ul className="flex items-center justify-center gap-1.5 mt-6">
@@ -139,7 +145,7 @@ export default function CaseStudies() {
         `}</style>
 
         <div className="relative">
-          <Slider ref={sliderRef} {...settings} className="cases-slider">
+          <Slider ref={sliderRef} key={slides} {...settings} className="cases-slider">
             {caseStudies.map((cs) => (
               <div key={cs.id} className="h-full">
                 <div className="group h-full rounded-[20px] border border-border bg-surface overflow-hidden transition-all duration-500 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:border-accent/20 flex flex-col">

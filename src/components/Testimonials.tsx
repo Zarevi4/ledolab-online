@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,10 +29,19 @@ const reviews = [
 export default function Testimonials() {
   const sliderRef = useRef<Slider>(null);
   const { t } = useI18n();
+  const [slides, setSlides] = useState(3);
+  useEffect(() => {
+    const calc = () => {
+      const w = window.innerWidth;
+      setSlides(w < 640 ? 1 : w < 1024 ? 2 : 3);
+    };
+    calc();
+    window.addEventListener("resize", calc);
+    return () => window.removeEventListener("resize", calc);
+  }, []);
 
   const settings = {
-    dots: true, infinite: true, speed: 500, slidesToShow: 3, slidesToScroll: 1, arrows: false, autoplay: true, autoplaySpeed: 4500, pauseOnHover: true,
-    responsive: [{ breakpoint: 1024, settings: { slidesToShow: 2 } }, { breakpoint: 640, settings: { slidesToShow: 1 } }],
+    dots: true, infinite: true, speed: 500, slidesToShow: slides, slidesToScroll: 1, arrows: false, autoplay: true, autoplaySpeed: 4500, pauseOnHover: true,
     appendDots: (dots: React.ReactNode) => (<div><ul className="flex items-center justify-center gap-1.5 mt-6">{dots}</ul></div>),
     customPaging: () => (<button className="w-1.5 h-1.5 rounded-full bg-border transition-all duration-300" />),
   };
@@ -89,7 +98,7 @@ export default function Testimonials() {
           .testimonials-slider .slick-slide > div { height: 100%; }
         `}</style>
 
-        <Slider ref={sliderRef} {...settings} className="testimonials-slider">
+        <Slider ref={sliderRef} key={slides} {...settings} className="testimonials-slider">
           {reviews.map((r, i) => (
             <div key={i} className="h-full">
               <div className="h-full p-5 rounded-[20px] border border-border bg-surface flex flex-col">

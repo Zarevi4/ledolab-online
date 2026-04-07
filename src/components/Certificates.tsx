@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,22 +34,27 @@ export default function Certificates() {
   const { locale } = useI18n();
   const sliderRef = useRef<Slider>(null);
   const l = labels[locale] || labels.ru;
+  const [slides, setSlides] = useState(6);
+  useEffect(() => {
+    const calc = () => {
+      const w = window.innerWidth;
+      setSlides(w < 480 ? 1 : w < 768 ? 3 : w < 1024 ? 5 : 6);
+    };
+    calc();
+    window.addEventListener("resize", calc);
+    return () => window.removeEventListener("resize", calc);
+  }, []);
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToShow: slides,
+    slidesToScroll: Math.min(2, slides),
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 5 } },
-      { breakpoint: 768, settings: { slidesToShow: 3 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
   };
 
   return (
@@ -93,7 +98,7 @@ export default function Certificates() {
           .certs-slider .slick-list { margin: 0 -8px; }
         `}</style>
 
-        <Slider ref={sliderRef} {...settings} className="certs-slider">
+        <Slider ref={sliderRef} key={slides} {...settings} className="certs-slider">
           {certificates.map((cert, i) => (
             <div key={i}>
               <div className="w-full aspect-square rounded-2xl border border-border bg-surface p-4 flex items-center justify-center hover:shadow-[0_8px_24px_rgba(0,0,0,0.05)] hover:border-accent/20 transition-all duration-300">

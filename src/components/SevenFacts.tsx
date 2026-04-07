@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,21 +22,27 @@ export default function SevenFacts() {
   const sliderRef = useRef<Slider>(null);
   const { locale } = useI18n();
   const t = (f: Fact) => ({ title: f.titles[locale] || f.titles.ru, text: f.texts[locale] || f.texts.ru });
+  const [slides, setSlides] = useState(3);
+  useEffect(() => {
+    const calc = () => {
+      const w = window.innerWidth;
+      setSlides(w < 640 ? 1 : w < 1024 ? 2 : 3);
+    };
+    calc();
+    window.addEventListener("resize", calc);
+    return () => window.removeEventListener("resize", calc);
+  }, []);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slides,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
     appendDots: (dots: React.ReactNode) => (
       <div><ul className="flex items-center justify-center gap-1.5 mt-6">{dots}</ul></div>
     ),
@@ -82,7 +88,7 @@ export default function SevenFacts() {
           .facts-slider .slick-slide > div { height: 100%; }
         `}</style>
 
-        <Slider ref={sliderRef} {...settings} className="facts-slider">
+        <Slider ref={sliderRef} key={slides} {...settings} className="facts-slider">
           {facts.map((fact) => (
             <div key={fact.id} className="h-full">
               <Link href={`/facts/${fact.id}`} className="block h-full">
