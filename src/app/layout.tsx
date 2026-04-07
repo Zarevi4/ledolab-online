@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, DM_Sans } from "next/font/google";
 import { I18nProvider } from "@/lib/i18n/context";
+import MotionProvider from "@/components/MotionProvider";
 import Header from "@/components/Header";
 import BackToTop from "@/components/BackToTop";
 import "./globals.css";
@@ -280,9 +281,11 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen grain antialiased">
         <I18nProvider>
-          <Header />
-          {children}
-          <BackToTop />
+          <MotionProvider>
+            <Header />
+            {children}
+            <BackToTop />
+          </MotionProvider>
         </I18nProvider>
       </body>
     </html>
