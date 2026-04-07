@@ -8,7 +8,7 @@ const fade = (i: number) => ({
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-40px" as const },
-  transition: { duration: 0.5, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] as const },
+  transition: { duration: 0.5, delay: 0, ease: [0.16, 1, 0.3, 1] as const },
 });
 
 const plans = [

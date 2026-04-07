@@ -20,7 +20,7 @@ export default function FAQ() {
         </motion.div>
         <div className="space-y-3">
           {t.faq.items.map((item, i) => (
-            <motion.div key={i} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }} transition={{ duration: 0.4, delay: i * 0.08 }} className="rounded-[16px] border border-border bg-surface overflow-hidden">
+            <motion.div key={i} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }} transition={{ duration: 0.4, delay: 0 }} className="rounded-[16px] border border-border bg-surface overflow-hidden">
               <button onClick={() => setOpenIndex(openIndex === i ? null : i)} className="w-full flex items-center justify-between p-5 text-left">
                 <span className="font-heading text-[15px] font-semibold text-ink pr-4">{item.question}</span>
                 <ChevronDown size={18} className={`text-ink-faint shrink-0 transition-transform duration-300 ${openIndex === i ? "rotate-180" : ""}`} />
