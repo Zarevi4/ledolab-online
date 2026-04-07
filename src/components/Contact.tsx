@@ -68,9 +68,9 @@ export default function Contact() {
             <div className="flex items-center gap-2"><Building2 size={14} />LEDO LAB EOOD (EIK: 208624555)</div>
             <div className="flex items-center gap-2"><MapPin size={14} />Bulgaria, Burgas</div>
           </div>
-          <div className="mt-4 pt-4 border-t border-border flex items-center justify-center gap-5 text-[13px] text-ink-light">
-            <a href="https://t.me/ledolab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors"><MessageCircle size={14} />Telegram</a>
-            <a href="https://wa.me/380638619285" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors"><Phone size={14} />WhatsApp</a>
+          <div className="mt-4 pt-4 border-t border-border flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-[13px] text-ink-light">
+            <a href="https://t.me/ledolab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-accent transition-colors"><MessageCircle size={14} />Telegram</a>
+            <a href="https://wa.me/380638619285" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-accent transition-colors"><Phone size={14} />WhatsApp</a>
             <a href="https://instagram.com/ledolab" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Instagram</a>
             <a href="https://youtube.com/@ledolab" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">YouTube</a>
             <a href="https://tiktok.com/@ledolab" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">TikTok</a>
