@@ -50,7 +50,7 @@ export default function Testimonials() {
     <section id="reviews" className="py-28 sm:py-36 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         {/* Header with Google badge */}
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }} transition={{ duration: 0.6 }} className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
             <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.testimonials.tag}</span>
             <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">

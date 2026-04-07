@@ -21,14 +21,14 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 sm:py-36">
       <div className="max-w-[580px] mx-auto px-6 lg:px-8">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-10">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }} transition={{ duration: 0.6 }} className="text-center mb-10">
           <span className="text-[12px] font-semibold tracking-[0.25em] uppercase text-accent">{t.contact.tag}</span>
           <h2 className="mt-3 font-heading text-[clamp(1.8rem,3.5vw,2.6rem)] font-bold leading-[1.15] tracking-[-0.02em] text-ink">
             {t.contact.title} <span className="gradient-text">{t.contact.titleAccent}</span>?
           </h2>
           <p className="mt-3 text-[16px] text-ink-light leading-relaxed">{t.contact.subtitle}</p>
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="rounded-[20px] border border-border bg-surface p-6 sm:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }} transition={{ duration: 0.6, delay: 0.1 }} className="rounded-[20px] border border-border bg-surface p-6 sm:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)]">
           <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>

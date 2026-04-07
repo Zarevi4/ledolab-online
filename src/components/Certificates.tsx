@@ -63,7 +63,7 @@ export default function Certificates() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }}
           transition={{ duration: 0.6 }}
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10"
         >

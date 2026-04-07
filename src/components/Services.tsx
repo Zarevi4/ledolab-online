@@ -105,7 +105,7 @@ export default function Services() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0, margin: "500px 0px 500px 0px" }}
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
